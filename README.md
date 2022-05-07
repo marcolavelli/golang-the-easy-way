@@ -15,7 +15,7 @@ Ed infine creare il file Go indicato precendentemente
 # pacchetti
 Ogni programma Go è composto da pacchetti
 
-I programmi inziano ad essere eseguiti nel pacchetto main
+I programmi iniziano ad essere eseguiti nel pacchetto main
 >     package main
 
 Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del percorso di importazione
