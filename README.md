@@ -1,10 +1,10 @@
-# go-italian-guide
+# Guida
 Guida galattica per autostoppisti Gopheriani (traduzione italiana e sintesi della Guida ufficiale https://go.dev/)
 
-# installazione
+# Installazione
 Per installare Go seguire le istruzioni ufficiali https://go.dev/doc/install
 
-# inizio
+# Inizio
 Il primo passo è creare una nuova directory per il progetto
 >     mkdir progetto
 >     cd progetto
@@ -15,7 +15,7 @@ In seguito creare un go.mod file per gestire le dipendenze
 Ed infine creare il file Go indicato in precedenza
 >     touch programma.go
 
-# pacchetti
+# Pacchetti
 Ogni programma Go è composto da pacchetti
 
 I programmi iniziano ad essere eseguiti nel pacchetto main
@@ -30,7 +30,7 @@ L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni vo
 Per vedere un numero diverso si deve seminare il generatore di numeri
 >     rand.Seed(time.Now().UTC().UnixNano())
 
-# importazioni
+# Importazioni
 Possiamo scrivere più istruzioni di importazioni
 >     import "fmt
 >     import "math/rand"
