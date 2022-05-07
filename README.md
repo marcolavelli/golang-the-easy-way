@@ -25,9 +25,7 @@ Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del perc
 >     import ("math/rand")
 >     rand.Intn(10)
 
-L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni volta che si esegue rand.Intn restituirà lo stesso numero
-
-Per vedere un numero diverso si deve seminare il generatore di numeri
+L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni volta che si esegue rand.Intn restituirà lo stesso numero; per vedere un numero diverso si deve seminare il generatore di numeri
 >     rand.Seed(time.Now().UTC().UnixNano())
 
 # Importazioni
