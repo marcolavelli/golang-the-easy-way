@@ -1,5 +1,8 @@
 # gonotes
-Guida galattica per autostoppisti Gopheriani (traduzione italiana e sintesi della Guida ufficiale https://go.dev/)	
+Guida galattica per autostoppisti Gopheriani (traduzione italiana e sintesi della Guida ufficiale https://go.dev/)
+
+# installazione
+Per installare Go seguire le istruzioni ufficiali https://go.dev/doc/install
 
 # inizio
 Il primo passo è creare una nuova directory per il progetto
@@ -9,7 +12,7 @@ Il primo passo è creare una nuova directory per il progetto
 In seguito creare un go.mod file per gestire le dipendenze
 >     go mod init programma.go/progetto
 
-Ed infine creare il file Go indicato precendentemente
+Ed infine creare il file Go indicato in precedenza
 >     touch programma.go
 
 # pacchetti
@@ -38,4 +41,3 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >       "math/rand"
 >     )
 
-  
