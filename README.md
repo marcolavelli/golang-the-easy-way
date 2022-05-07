@@ -39,3 +39,7 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >       "math/rand"
 >     )
 
+# Nomi esportati
+In Go, un nome viene esportato se inizia con una lettera maiuscola
+>     math.Pi
+
