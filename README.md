@@ -1,4 +1,4 @@
-# gonotes
+# go-italian-guide
 Guida galattica per autostoppisti Gopheriani (traduzione italiana e sintesi della Guida ufficiale https://go.dev/)
 
 # installazione
