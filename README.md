@@ -1,4 +1,4 @@
-# Guida
+# Guida galattica per autostoppisti Gopheriani
 Guida galattica per autostoppisti Gopheriani (traduzione italiana e sintesi della Guida ufficiale https://go.dev/)
 
 # Installazione
