@@ -9,10 +9,10 @@ Il primo passo è creare una nuova directory per il progetto
 >     mkdir progetto
 >     cd progetto
 
-In seguito creare un go.mod file per gestire le dipendenze
+in seguito creare un go.mod file per gestire le dipendenze
 >     go mod init programma.go/progetto
 
-Ed infine creare il file Go indicato in precedenza
+infine creare il file Go indicato in precedenza
 >     touch programma.go
 
 # Pacchetti
@@ -40,6 +40,10 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >     )
 
 # Nomi esportati
-In Go, un nome viene esportato se inizia con una lettera maiuscola
+In Go un nome è esportato se inizia con una lettera maiuscola
 >     math.Pi
 
+# Funzioni
+Una funzione può accettare zero o più argomenti
+>     func add(x int, y int) int { ...
+Si noti che il tipo viene dopo il nome della variabile
