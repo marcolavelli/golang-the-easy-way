@@ -56,9 +56,7 @@ Una funzione può restituire un numero qualsiasi di risultati
 >         return y, x
 >     }
 
-# Valori di ritorno denominati
 Una funzione può avere valori di ritorno denominati
-
 Un'istruzione return senza argomenti restituisce i valori denominati
 
 >     func split(sum int) (x, y int) {
