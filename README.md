@@ -53,5 +53,5 @@ Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterl
 
 Una funzione può restituire un numero qualsiasi di risultati
 >     func swap(x, y int) (int, int) {
->       return y, x
+>         return y, x
 >     }
