@@ -67,7 +67,7 @@ Una funzione può avere valori di ritorno "denominati" e restituirli con un'istr
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
 
 # Variabili
-L'istruzione var dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo è l'ultimo
+L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo è l'ultimo
 >     var c, python, java bool
 
 Una dichiarazione var può includere inizializzatori, uno per variabile
@@ -75,7 +75,7 @@ Una dichiarazione var può includere inizializzatori, uno per variabile
 
 Se è presente un inizializzatore, il tipo può essere omesso e la variabile prenderà il tipo dell'inizializzatore
 
-All'interno di una funzione, l'istruzione di assegnazione breve := può essere utilizzata al posto di una dichiarazione var con tipo implicito
+All'interno di una funzione, l'istruzione di assegnazione breve *:=* può essere utilizzata al posto di una dichiarazione *var* con tipo implicito
 >     func main() {
 >         c, python, java = true, false, "no!"
 >         ...
