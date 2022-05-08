@@ -52,4 +52,6 @@ Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterl
 >     func add(x, y int) int { ...
 
 Una funzione può restituire un numero qualsiasi di risultati
->     return x, y }
+>     func swap(x, y int) (int, int) {
+>       return y, x
+>     }
