@@ -77,5 +77,5 @@ Se è presente un inizializzatore, il tipo può essere omesso e la variabile pre
 
 All'interno di una funzione, l'istruzione di assegnazione breve *:=* può essere utilizzata al posto di una dichiarazione *var* con tipo implicito
 >     func main() {
->         c, python, java = true, false, "no!"
+>         c, python, java := true, false, "no!"
 >         ...
