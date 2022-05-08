@@ -39,13 +39,13 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >       "math/rand"
 >     )
 
-# Nomi esportati
-In Go un nome è esportato se inizia con una lettera maiuscola
+In Go un nome è "esportato" se inizia con una lettera maiuscola
 >     math.Pi
 
 # Funzioni
 Una funzione può accettare zero o più parametri
 >     func add(x int, y int) int { ...
+
 Si noti che il tipo viene dopo il nome della variabile
 
 Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
@@ -56,7 +56,7 @@ Una funzione può restituire un numero qualsiasi di risultati
 >         return y, x
 >     }
 
-Una funzione può avere valori di ritorno denominati e restituirli con un'istruzione return senza argomenti
+Una funzione può avere valori di ritorno "denominati" e restituirli con un'istruzione return senza argomenti
 
 >     func split(sum int) (x, y int) {
 >         x = sum * 4 / 9
