@@ -61,10 +61,10 @@ Una funzione può avere valori di ritorno denominati
 
 Un'istruzione return senza argomenti restituisce i valori denominati
 
->   func split(sum int) (x, y int) {
->       x = sum * 4 / 9
->       y = sum - x
->       return
->   }
+>     func split(sum int) (x, y int) {
+>         x = sum * 4 / 9
+>         y = sum - x
+>         return
+>     }
 
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
