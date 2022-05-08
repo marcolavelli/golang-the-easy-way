@@ -44,6 +44,9 @@ In Go un nome è esportato se inizia con una lettera maiuscola
 >     math.Pi
 
 # Funzioni
-Una funzione può accettare zero o più argomenti
+Una funzione può accettare zero o più parametri
 >     func add(x int, y int) int { ...
 Si noti che il tipo viene dopo il nome della variabile
+
+Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
+>     func add(x, y int) int { ...
