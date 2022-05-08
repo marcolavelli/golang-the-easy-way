@@ -50,3 +50,6 @@ Si noti che il tipo viene dopo il nome della variabile
 
 Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
 >     func add(x, y int) int { ...
+
+Una funzione può restituire un numero qualsiasi di risultati
+>     return x, y }
