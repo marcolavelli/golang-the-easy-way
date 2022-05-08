@@ -1,19 +1,20 @@
 # Guida galattica per autostoppisti Gopheriani
-Guida galattica per autostoppisti Gopheriani (traduzione e sintesi italiana della Guida ufficiale https://go.dev/)
+Guida galattica per autostoppisti Gopheriani (traduzione e sintesi italiana della Guida ufficiale => https://go.dev/)
 
 # Installazione
-Per installare Go seguire le istruzioni ufficiali https://go.dev/doc/install
+Per installare Go seguire le istruzioni ufficiali => https://go.dev/doc/install
 
 # Inizio
-Il primo passo è creare una nuova directory per il progetto
+Il primo passo è creare una directory per il nuovo progetto
 >     mkdir progetto
 >     cd progetto
 
-in seguito creare un go.mod file per gestire le dipendenze
+il secondo è creare un go.mod file per la gestione delle dipendenze
 >     go mod init programma.go/progetto
 
-infine creare il file Go indicato in precedenza
+ed infine creare il file Go
 >     touch programma.go
+
 
 # Pacchetti
 Ogni programma Go è composto da pacchetti
@@ -25,11 +26,11 @@ Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del perc
 >     import ("math/rand")
 >     rand.Intn(10)
 
-L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni volta che si esegue rand.Intn restituirà lo stesso numero; per vedere un numero diverso si deve seminare il generatore di numeri
+L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni volta che si esegue rand.Intn restituirà lo stesso numero; per vedere un numero diverso si deve "seminare" il generatore di numeri
 >     rand.Seed(time.Now().UTC().UnixNano())
 
 # Importazioni
-Possiamo scrivere più istruzioni di importazioni
+In Go possiamo scrivere più istruzioni di importazioni
 >     import "fmt
 >     import "math/rand"
 
@@ -39,7 +40,7 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >       "math/rand"
 >     )
 
-In Go un nome è "esportato" se inizia con una lettera maiuscola
+Un nome "esportato" inizia con una lettera maiuscola
 >     math.Pi
 
 # Funzioni
@@ -57,7 +58,6 @@ Una funzione può restituire un numero qualsiasi di risultati
 >     }
 
 Una funzione può avere valori di ritorno "denominati" e restituirli con un'istruzione return senza argomenti
-
 >     func split(sum int) (x, y int) {
 >         x = sum * 4 / 9
 >         y = sum - x
