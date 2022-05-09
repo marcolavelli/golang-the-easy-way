@@ -90,6 +90,6 @@ I tipi di base in Go sono
 
 Per un valore intero è consigliato utilizzare il tipo *int*, che insieme ai tipi *uint* e *uintptr*, è dipendente dall'architettura della macchina
 
-In go ci sono due alias, *byte* equivale a *uint8* e *rune* vale *int32*
+In Go ci sono due alias, *byte* equivale a *uint8* e *rune* vale *int32*
 >     byte == unit8
 >     rune == int32
