@@ -96,6 +96,6 @@ Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *u
 In Go ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 
 Alle variabili dichiarate senza un valore iniziale esplicito viene assegnato il valore zero, che equivale a
->   int, float, ... = 0
->   bool = false
->   string = ""
+>     int, float, ... = 0
+>     bool = false
+>     string = ""
