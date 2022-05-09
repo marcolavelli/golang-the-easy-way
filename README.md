@@ -82,14 +82,14 @@ I tipi di base in Go sono
 >     bool
 >     string
 >     int    int8    int16    int32     int64
->     uint   uint8   uint16   uint32    uint64
+>     uint   uint8   uint16   uint32    uint64    uintptr
 >     byte
 >     rune
 >     float32        float64
 >     complex32      complex64
 
-Per un valore intero è consigliato utilizzare il tipo *int* e sarà largo 32 bit in un sistema a 32 bit e 64 bit in quello a 64 bit 
+Per un valore intero è consigliato utilizzare il tipo *int*, che insieme ai tipi *uint* e *uintptr*, è dipendente dall'architettura della macchina
 
-Ci sono poi due alias
+In go ci sono due alias, *byte* equivale a *uint8* e *rune* vale *int32*
 >     byte == unit8
 >     rune == int32
