@@ -94,3 +94,8 @@ I tipi di base in Go suddivisi per dimensione sono
 Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *uintptr*, la sua dimensione dipende dall'architettura della macchina
 
 In Go ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
+
+Alle variabili dichiarate senza un valore iniziale esplicito viene assegnato il valore zero, che equivale a
+>   int, float, ... = 0
+>   bool = false
+>   string = ""
