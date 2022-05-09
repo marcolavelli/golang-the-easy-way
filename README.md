@@ -5,14 +5,14 @@ Guida galattica per autostoppisti Gopheriani (traduzione e sintesi italiana dell
 Per installare Go seguire le istruzioni ufficiali => https://go.dev/doc/install
 
 # Inizio
-Il primo passo è creare una directory per il nuovo progetto
+Il primo passo di un programma Go è creare una directory per il nuovo progetto
 >     mkdir progetto
 >     cd progetto
 
 il secondo è creare un go.mod file per la gestione delle dipendenze
 >     go mod init programma.go/progetto
 
-ed infine creare il file Go
+e per ultimo creare il file Go
 >     touch programma.go
 
 
@@ -70,12 +70,10 @@ Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo
 L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo è l'ultimo
 >     var c, python, java bool
 
-Una dichiarazione var può includere inizializzatori, uno per variabile
+Una dichiarazione var può includere inizializzatori, uno per variabile, e il tipo può essere omesso
 >     var c, python, java = true, false, "no!"
 
-Se è presente un inizializzatore, il tipo può essere omesso e la variabile prenderà il tipo dell'inizializzatore
-
-All'interno di una funzione, l'istruzione di assegnazione breve *:=* può essere utilizzata al posto di una dichiarazione *var* con tipo implicito
+L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
 >     func main() {
 >         c, python, java := true, false, "no!"
 >         ...
