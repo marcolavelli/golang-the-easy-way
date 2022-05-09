@@ -69,7 +69,7 @@ Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo
 L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo viene dopo i nomi delle variabili
 >     var c, python, java bool
 
-Una dichiarazione var può includere inizializzatori, uno per variabile, e il tipo può essere omesso
+Una dichiarazione *var* può includere inizializzatori, uno per variabile, e il tipo può essere omesso
 >     var c, python, java = true, false, "no!"
 
 L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
