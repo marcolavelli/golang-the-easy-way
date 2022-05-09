@@ -15,7 +15,7 @@ il secondo è creare un *go.mod* file per la gestione delle dipendenze
 ed infine creare il file *Go*, con lo stesso nome indicato in precedenza nelle dipendenze
 >     touch programma.go
 
-Ora siamo pronti in questa avventura nel fantastico mondo di *Go* 
+Fantastico! Ora siamo pronti a vivere una magica avventura nel mondo di *Go* 
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti ed inizia ad essere eseguito nel pacchetto *main*
