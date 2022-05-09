@@ -5,14 +5,14 @@ Guida galattica per autostoppisti Gopheriani (traduzione e sintesi italiana dell
 Per installare Go seguire le istruzioni ufficiali => https://go.dev/doc/install
 
 # Inizializzazione
-Il primo passo di un programma Go è creare una directory per il progetto
+Il primo passo in un programma Go è creare la directory del progetto
 >     mkdir progetto
 >     cd progetto
 
 il secondo è creare un *go.mod* file per la gestione delle dipendenze
 >     go mod init programma.go/progetto
 
-e per ultimo creare il file Go, indicato in precedenza
+ed infine creare il file Go, indicato in precedenza nelle dipendenze
 >     touch programma.go
 
 Happy coding!
