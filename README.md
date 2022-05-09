@@ -78,18 +78,19 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >         ...
 
 # Tipi di base
-I tipi di base in Go sono
->     bool
->     string
->     int    int8    int16    int32     int64
->     uint   uint8   uint16   uint32    uint64    uintptr
->     byte
->     rune
->     float32        float64
->     complex32      complex64
+I tipi di base in Go suddivisi per dimensione sono
+| size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
+| :---------- | :---------- | :---------- | :---------- | :---------- |
+| | bool |
+| string |
+|int | int8 | int16 | int32 | int64 |
+|uint | uint8 | uint16 | uint32 | uint64 |
+| uintptr |
+| | byte |
+| | | | rune |
+| | | | float32 | float64 |
+| | | | complex32 | complex64 |
 
-Il tipo *int* è consigliato per un valore intero, e come per i tipi *uint* e *uintptr* la dimensione dipende dalla piattaforma (32 o 64 bit)
+Il tipo *int* è consigliato per un valore intero, e come per i tipi *uint* e *uintptr*, la dimensione dipende dalla piattaforma (32 o 64 bit)
 
 In Go ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
->     byte == unit8
->     rune == int32
