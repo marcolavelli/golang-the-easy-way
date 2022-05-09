@@ -88,7 +88,7 @@ I tipi di base in Go sono
 >     float32        float64
 >     complex32      complex64
 
-Per un valore intero è consigliato utilizzare il tipo *int*, che insieme ai tipi *uint* e *uintptr*, è dipendente dall'architettura della macchina
+Per un valore intero è consigliato utilizzare il tipo *int* la cui larghezza, come per i tipi *uint* e *uintptr*, è dipendente dall'architettura della macchina
 
 In Go ci sono due alias, *byte* equivale a *uint8* e *rune* vale *int32*
 >     byte == unit8
