@@ -95,7 +95,12 @@ Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *u
 
 In Go ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 
-Alle variabili dichiarate senza un valore iniziale esplicito viene assegnato il valore zero, che equivale a
->     numerici = 0
->     booleani = false
->     stringhe = ""
+Le variabili possono essere dichiare senza un valore esplicito
+>     var numerico int
+>     var booleano bool
+>     var vocabolo string
+
+e viene assegnato a loro il valore zero che equivale secondo il tipo a
+>     numerico == 0
+>     booleano == false
+>     vocabolo == ""
