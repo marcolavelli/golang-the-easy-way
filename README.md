@@ -12,7 +12,7 @@ Il primo passo in un programma *Go* è creare la directory del progetto
 il secondo è creare un *go.mod* file per la gestione delle dipendenze
 >     go mod init programma.go/progetto
 
-ed infine creare il file *Go*, indicato in precedenza nelle dipendenze
+ed infine creare il file *Go*, con lo stesso nome indicato in precedenza nelle dipendenze
 >     touch programma.go
 
 Happy coding!
