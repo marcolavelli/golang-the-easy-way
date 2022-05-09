@@ -76,3 +76,16 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >     func main() {
 >         c, python, java := true, false, "no!"
 >         ...
+
+# Tipi di base
+I tipi di base in Go sono
+>     bool
+>     string
+>     int    int8    int16    int32   int64
+>     uint   uint8   uint16   uint32  uint64
+>     byte           // alias per uint8
+>     rune           // alias per int32
+>     float32        float64
+>     complex32      complex64
+
+Per un valore intero è consigliato utilizzare il tipo *int* e sarà largo 32 bit in un sistema a 32 bit e 64 bit in quello a 64 bit 
