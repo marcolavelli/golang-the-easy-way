@@ -66,7 +66,7 @@ Una funzione può avere valori di ritorno "denominati" e restituirli con un'istr
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
 
 # Variabili
-L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo dopo i nomi delle variabili
+L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo viene dopo i nomi delle variabili
 >     var c, python, java bool
 
 Una dichiarazione var può includere inizializzatori, uno per variabile, e il tipo può essere omesso
