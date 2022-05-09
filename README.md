@@ -81,10 +81,10 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 I tipi di base in Go sono
 >     bool
 >     string
->     int    int8    int16    int32   int64
->     uint   uint8   uint16   uint32  uint64
->     byte   // alias uint8
->     rune   // alias int32
+>     int    int8    int16    int32     int64
+>     uint   uint8   uint16   uint32    uint64
+>     byte   *alias uint8*
+>     rune   *alias int32*
 >     float32        float64
 >     complex32      complex64
 
