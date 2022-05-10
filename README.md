@@ -127,12 +127,12 @@ Le costanti non possono essere dichiarate utilizzando la sintassi :=
 >         fmt.Println(i)
 >     }
     
-Il ciclo *for* di base ha tre componenti, non obbligatori, separati da punto e virgola
+Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e virgola
 - *init* : la dichiarazione iniziale di variabili visibili nell'ambito del ciclo
 - *cond* : l'espressione di condizione valutata prima di ogni iterazione
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
-Se ometti le istruzioni *init* e *post*, puoi anche togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
+Se ometti le istruzioni *init* e *post*, si può togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
 >     for i < 1000 {
 >         i += i
 >     }
