@@ -80,7 +80,7 @@ L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argo
 Una dichiarazione *var* può includere inizializzatori, uno per variabile, e il tipo può essere omesso
 >     var c, python, java = true, false, "no!"
 
-L'assegnazione breve := può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
+L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
 >     func main() {
 >         c, python, java := true, false, "no!"
 >         ...
@@ -119,7 +119,7 @@ A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richied
 Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il loro nome inizia com la prima lettera maiuscola
 >     const Pi = 3.14
 
-Le costanti non possono essere dichiarate utilizzando l'assegnazione breve
+Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
 
 # For
 *Go* ha un solo costrutto di loop, il ciclo *for*
