@@ -144,4 +144,5 @@ Se ometti la condizione di ciclo *cond* si ottiene un *loop infinito*, con o sen
 >     } 
 
 >     for {
+>         // loop infinito
 >     } 
