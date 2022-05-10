@@ -104,9 +104,9 @@ Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *u
 In *Go* ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 
 Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
->     var numerico int      // numerico = 0
->     var booleano bool     // booleano = false
->     var vocabolo string   // vocabolo = ""  
+>     var numerico int          =>  numerico = 0
+>     var booleano bool         =>  booleano = false
+>     var vocabolo string       =>  vocabolo = ""  
 
 # Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
