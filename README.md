@@ -140,7 +140,7 @@ Se ometti le istruzioni *init* e *post*, si può togliere i punti e virgola e il
 Se ometti la condizione di ciclo *cond* si ottiene un *loop infinito*, con o senza *init* e *post*
 >     for {
 >     } 
->     
+
 >     for i := 0; ; i++ {
 >         fmt.Println(i)
 >     } 
