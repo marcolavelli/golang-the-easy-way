@@ -18,6 +18,11 @@ Nell'editor di testo, crea un file *ciao.go* e scrivi il seguente codice
 >           fmt.Println("Ciao, Mondo!")
 >       }
 
+L'alberatura del progetto è la seguente
+>       ├── progetto
+>           ├── ciao.go
+>           └── go.mod
+
 Esegui il codice per vedere il saluto
 >       go run .
 
