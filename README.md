@@ -138,11 +138,7 @@ Se si omettono le istruzioni *init* e *post*, e i punti e virgola, si ottiene un
 >         i += 1
 >     }
 
-Se si omette la condizione di ciclo *cond*, si ottiene un *loop infinito*
->     for i := 0; ; i++ {
->         fmt.Println(i)
->     } 
-
+Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     for {
 >         // loop infinito
 >     } 
