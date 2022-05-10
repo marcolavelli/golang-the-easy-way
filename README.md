@@ -1,5 +1,5 @@
 # Golang The Italian Easy Way
-Traduzione, sintesi e approfondimenti in lingua italiana della Guida ufficiale *Go*
+Traduzione, sintesi e approfondimento in lingua italiana della Guida ufficiale *Go*
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
@@ -24,7 +24,7 @@ Esegui il codice per vedere il saluto
 Fantastico! Hai creato il primo programma e ora sei pronto a vivere una magica avventura nel mondo di *Go* 
 
 # Pacchetti
-Ogni programma *Go* è composto da pacchetti ed inizia ad essere eseguito nel pacchetto *main*
+Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
 >     package main
 
 Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del percorso di importazione
@@ -53,8 +53,6 @@ Una funzione può accettare zero o più parametri e può restituire un numero qu
 >     func swap(x int, y int) (int, int) {
 >         return y, x
 >     }
-
-Si noti che il tipo viene dopo il nome della variabile
 
 Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
 >     func add(x, y int) int {
@@ -100,15 +98,10 @@ Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *u
 
 In *Go* ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 
-Le variabili possono essere dichiare senza un valore esplicito
->     var numerico int
->     var booleano bool
->     var vocabolo string
-
-e viene assegnato a loro il valore zero che equivale secondo il tipo a
->     numerico == 0
->     booleano == false
->     vocabolo == ""
+Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
+>     var numerico int      // numerico = 0
+>     var booleano bool     // booleano = false
+>     var vocabolo string   // vocabolo = ""  
 
 # Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
