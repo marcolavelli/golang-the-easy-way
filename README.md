@@ -1,5 +1,5 @@
-# Guida galattica per autostoppisti Gopheriani
-Guida galattica per autostoppisti Gopheriani (traduzione e sintesi italiana della Guida ufficiale => https://go.dev/)
+# Golang Italian Easy Way (Italian)
+Traduzione e sintesi italiana della Guida ufficiale => https://go.dev/
 
 # Installazione
 Per installare *Go* seguire le istruzioni ufficiali => https://go.dev/doc/install
