@@ -1,5 +1,5 @@
 # Golang The Italian Easy Way
-Traduzione e sintesi italiana della Guida ufficiale
+Traduzione, sintesi e approfondimenti in lingua italiana della Guida ufficiale *Go*
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
@@ -9,13 +9,13 @@ Apri un prompt dei comandi e crea una directory progetto per il primo codice sor
 >     cd progetto
 
 Abilita il monitoraggio delle dipendenze: crea un file go.mod e assegna il nome del modulo in cui si troverà il codice
->     go mod init hello.go/progetto
+>     go mod init ciao.go/progetto
 
-Nell'editor di testo, crea un file *hello.go* e scrivi il seguente codice
+Nell'editor di testo, crea un file *ciao.go* e scrivi il seguente codice
 >       package main
 >       import "fmt"
 >       func main() {
->           fmt.Println("Hello, World!")
+>           fmt.Println("Ciao, Mondo!")
 >       }
 
 Esegui il codice per vedere il saluto
@@ -109,3 +109,10 @@ e viene assegnato a loro il valore zero che equivale secondo il tipo a
 >     numerico == 0
 >     booleano == false
 >     vocabolo == ""
+
+# Conversioni di tipo
+L'espressione *T(v)* converte il valore *v* nel tipo *T*
+>     var intero = 7
+>     var decimale = float64(intero / 2)
+
+A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richiede una conversione esplicita
