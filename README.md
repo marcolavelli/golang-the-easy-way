@@ -132,13 +132,13 @@ Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e 
 - *cond* : l'espressione di condizione valutata prima di ogni iterazione
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
-Se ometti le istruzioni *init* e *post*, e i punti e virgola, si ottiene un ciclo *while* di *C*
+Se si omettono le istruzioni *init* e *post*, e i punti e virgola, si ottiene un ciclo *while* di *C*
 >     i := 0
 >     for i < 10 {
 >         i += 1
 >     }
 
-Se ometti la condizione di ciclo *cond* si ottiene un *loop infinito*, con o senza *init* e *post*
+Se si omette la condizione di ciclo *cond*, si ottiene un *loop infinito*
 >     for i := 0; ; i++ {
 >         fmt.Println(i)
 >     } 
