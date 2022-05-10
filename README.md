@@ -121,4 +121,26 @@ Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e 
 
 Le costanti non possono essere dichiarate utilizzando la sintassi :=
 
+# For
+*Go* ha un solo costrutto di loop, il ciclo *for*
+>     for i := 0; i < 10; i++ {
+>         fmt.Println(i)
+>     }
+    
+Il ciclo *for* di base ha tre componenti, non obbligatori, separati da punto e virgola
+1. *init*, la dichiarazione iniziale di variabili visibili nell'ambito del ciclo
+2. *cond*, l'espressione di condizione valutata prima di ogni iterazione
+3. *post*, l'istruzione eseguita alla fine di ogni iterazione
 
+Se ometti le istruzioni *init* e *post*, puoi anche togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
+>     for i < 1000 {
+>         i += i
+>     }
+
+Se ometti la condizione di ciclo *cond* si ottiene un *loop infinito*, con o senza *init* e *post*
+>     for {
+>     } 
+>     
+>     for i := 0; ; i++ {
+>         fmt.Println(i)
+>     } 
