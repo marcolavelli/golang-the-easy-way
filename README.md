@@ -11,17 +11,17 @@ Apri un prompt dei comandi e crea una directory progetto per il primo codice sor
 Abilita il monitoraggio delle dipendenze: crea un file go.mod e assegna il nome del modulo in cui si troverà il codice
 >     go mod init ciao.go/progetto
 
-Nell'editor di testo, crea un file *ciao.go* e scrivi il seguente codice
+Crea un file *ciao.go* e verifica la struttura del progetto
+>       └── progetto
+>           ├── ciao.go
+>           └── go.mod
+
+Apri l'editor di testo e scrivi il seguente codice
 >       package main
 >       import "fmt"
 >       func main() {
 >           fmt.Println("Ciao, Mondo!")
 >       }
-
-Verifica la struttura del progetto
->       └── progetto
->           ├── ciao.go
->           └── go.mod
 
 Esegui il codice per vedere il saluto
 >       go run .
