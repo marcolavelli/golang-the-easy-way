@@ -1,5 +1,5 @@
 # Golang Italian Easy Way
-Traduzione e sintesi italiana della Guida ufficiale => https://go.dev/
+Traduzione e sintesi italiana della Guida ufficiale
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
