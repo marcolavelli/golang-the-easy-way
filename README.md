@@ -1,4 +1,4 @@
-# Golang Italian Easy Way
+# Golang The Italian Easy Way
 Traduzione e sintesi italiana della Guida ufficiale
 
 # Introduzione
