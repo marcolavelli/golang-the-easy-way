@@ -1,21 +1,27 @@
-# Golang Italian Easy Way (Italian)
+# Golang Italian Easy Way
 Traduzione e sintesi italiana della Guida ufficiale => https://go.dev/
 
-# Installazione
-Per installare *Go* seguire le istruzioni ufficiali => https://go.dev/doc/install
+# Introduzione
+Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
 
-# Inizializzazione
-Il primo passo in un programma *Go* è creare la directory del progetto
+Apri un prompt dei comandi e crea una directory progetto per il primo codice sorgente *Go*
 >     mkdir progetto
 >     cd progetto
 
-il secondo è creare un *go.mod* file per la gestione delle dipendenze
->     go mod init programma.go/progetto
+Abilita il monitoraggio delle dipendenze: crea un file go.mod e assegna il nome del modulo in cui si troverà il codice
+>     go mod init hello.go/progetto
 
-ed infine creare il file *Go*, con lo stesso nome indicato in precedenza nelle dipendenze
->     touch programma.go
+Nell'editor di testo, crea un file *hello.go* e scrivi il seguente codice
+>       package main
+>       import "fmt"
+>       func main() {
+>           fmt.Println("Hello, World!")
+>       }
 
-Fantastico! Ora siamo pronti a vivere una magica avventura nel mondo di *Go* 
+Esegui il codice per vedere il saluto
+>       go run .
+
+Fantastico! Hai creato il primo programma e ora sei pronto a vivere una magica avventura nel mondo di *Go* 
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti ed inizia ad essere eseguito nel pacchetto *main*
@@ -39,22 +45,21 @@ ma è buon stile di programmazione usare l'istruzione fattorizzata
 >       "math/rand"
 >     )
 
-Un nome "esportato" inizia con una lettera maiuscola
+Un nome "esportato" inizia sempre con una lettera maiuscola
 >     math.Pi
 
 # Funzioni
-Una funzione può accettare zero o più parametri
->     func add(x int, y int) int { ...
-
-Si noti che il tipo viene dopo il nome della variabile
-
-Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
->     func add(x, y int) int { ...
-
-Una funzione può restituire un numero qualsiasi di risultati
->     func swap(x, y int) (int, int) {
+Una funzione può accettare zero o più parametri e può restituire un numero qualsiasi di risultati
+>     func swap(x int, y int) (int, int) {
 >         return y, x
 >     }
+
+Si noti che il tipo viene dopo il nome della variabile 
+
+Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
+>     func add(x, y int) int {
+>         return x + y
+>     }   
 
 Una funzione può avere valori di ritorno "denominati" e restituirli con un'istruzione *return* senza argomenti
 >     func split(sum int) (x, y int) {
