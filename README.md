@@ -133,6 +133,7 @@ Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e 
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
 Se ometti le istruzioni *init* e *post*, si possono togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
+>     i := 1
 >     for i < 10 {
 >         i += i
 >     }
