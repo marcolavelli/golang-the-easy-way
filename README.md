@@ -119,7 +119,7 @@ A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richied
 Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il loro nome inizia com la prima lettera maiuscola
 >     const Pi = 3.14
 
-Le costanti non possono essere dichiarate utilizzando la sintassi :=
+Le costanti non possono essere dichiarate utilizzando l'assegnazione breve
 
 # For
 *Go* ha un solo costrutto di loop, il ciclo *for*
