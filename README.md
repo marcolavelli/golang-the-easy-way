@@ -132,7 +132,7 @@ Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e 
 - *cond* : l'espressione di condizione valutata prima di ogni iterazione
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
-Se ometti le istruzioni *init* e *post*, si può togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
+Se ometti le istruzioni *init* e *post*, si possono togliere i punti e virgola e il ciclo *for* diventa come un ciclo *while* di *C*
 >     for i < 1000 {
 >         i += i
 >     }
