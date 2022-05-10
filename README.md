@@ -54,7 +54,7 @@ Una funzione può accettare zero o più parametri e può restituire un numero qu
 >         return y, x
 >     }
 
-Si noti che il tipo viene dopo il nome della variabile 
+Si noti che il tipo viene dopo il nome della variabile
 
 Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
 >     func add(x, y int) int {
@@ -77,7 +77,7 @@ L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argo
 Una dichiarazione *var* può includere inizializzatori, uno per variabile, e il tipo può essere omesso
 >     var c, python, java = true, false, "no!"
 
-L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
+L'assegnazione breve := può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
 >     func main() {
 >         c, python, java := true, false, "no!"
 >         ...
@@ -110,9 +110,17 @@ e viene assegnato a loro il valore zero che equivale secondo il tipo a
 >     booleano == false
 >     vocabolo == ""
 
-# Conversioni di tipo
+# Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
 >     var i int = 271
 >     var f float64 = float64(i) / 100
 
 A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richiede una conversione esplicita
+
+# Costanti
+Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il nome inizia com la prima lettera maiuscola
+>     const Pi = 3.14
+
+Le costanti non possono essere dichiarate utilizzando la sintassi :=.
+
+
