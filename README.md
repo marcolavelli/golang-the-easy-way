@@ -147,10 +147,14 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 
 # If
 L'istruzione *if* in *Go* può iniziare con una breve istruzione da eseguire prima della condizione   
->     if power := math.Pow(x, n); power < limit {
->		fmt.Println(power)
+>     if x == 0 {
+>       return 1
+>     }
+>     
+>     if y := limit; x < limit {
+>		return x
 >     } else {
->	    fmt.Printf("%g >= %g\n", power, limit)
+>	    return y
 >     }
 
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
