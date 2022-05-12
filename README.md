@@ -144,3 +144,15 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     for {
 >         // loop infinito
 >     } 
+
+# If
+Le istruzioni di Go se sono come i suoi cicli for; l'espressione non deve essere necessariamente racchiusa tra parentesi ( ) ma le parentesi graffe { } sono obbligatorie
+>     if x < 0 {
+>         return x
+>     }
+
+Come per, l'istruzione if può iniziare con una breve istruzione da eseguire prima della condizione.
+
+Le variabili dichiarate dall'istruzione sono nell'ambito solo fino alla fine dell'if.
+
+Le variabili dichiarate all'interno di un'istruzione if short sono disponibili anche all'interno di uno qualsiasi dei blocchi else.
