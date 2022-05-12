@@ -30,7 +30,7 @@ Apri l'editor di testo e scrivi il seguente codice
 Esegui il codice per vedere il saluto
 >       go run .
 
-Fantastico, hai creato il primo programma *Go*!
+Fantastico! hai creato il primo programma *Go* 🦫
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
