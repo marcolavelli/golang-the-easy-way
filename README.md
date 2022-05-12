@@ -146,12 +146,7 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     } 
 
 # If
-In *Go* l'espressione dell'istruzione *if* non deve essere necessariamente racchiusa tra parentesi
->     if x < 0 {
->         return x
->     }
-
-L'istruzione *if*, come per il ciclo *for*, può iniziare con una breve istruzione da eseguire prima della condizione  
+L'istruzione *if* in *Go* può iniziare con una breve istruzione da eseguire prima della condizione   
 >     if power := math.Pow(x, n); power < limit {
 >		fmt.Println(power)
 >     } else {
