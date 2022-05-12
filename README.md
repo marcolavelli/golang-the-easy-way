@@ -146,7 +146,7 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     } 
 
 # If
-L'istruzione *if* in *Go* può iniziare con una breve istruzione da eseguire prima della condizione   
+*Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione   
 >     if x > limit {
 >       return limit
 >     }
