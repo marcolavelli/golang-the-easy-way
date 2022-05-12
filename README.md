@@ -1,5 +1,5 @@
 # Golang 🦫 The Easy Way
-Sintetizzare Semplificare Scandagliare il linguaggio *Go*
+Guida sintetica e semplice del linguaggio *Go*
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
