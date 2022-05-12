@@ -1,5 +1,5 @@
 # Golang 🦫 The Easy Way
-Guida sintetica e semplice del linguaggio *Go*
+Guida sintetica e semplice del linguaggio *Go* (prima edizione in lingua italiana)
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
