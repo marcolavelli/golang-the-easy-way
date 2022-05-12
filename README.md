@@ -18,7 +18,9 @@ Crea un file *ciao.go* e verifica la struttura del progetto
 
 Apri l'editor di testo e scrivi il seguente codice
 >       package main
+>       
 >       import "fmt"
+>       
 >       func main() {
 >           fmt.Println("Ciao, Mondo!")
 >       }
