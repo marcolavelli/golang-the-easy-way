@@ -1,5 +1,5 @@
-# Golang 🦫 The Italian Easy Way
-Semplificazione e approfondimento in lingua italiana della Guida ufficiale *Go*  
+# Golang 🦫 The Easy Way
+Sintetizzare Semplificare Scandagliare il linguaggio *Go* (versione in lingua italiana)
 
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
@@ -30,7 +30,7 @@ Apri l'editor di testo e scrivi il seguente codice
 Esegui il codice per vedere il saluto
 >       go run .
 
-Fantastico! hai creato il primo programma *Go* 🦫
+Fantastico! Hai creato il primo programma *Go*
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
