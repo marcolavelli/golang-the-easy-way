@@ -28,7 +28,7 @@ Apri l'editor di testo e scrivi il seguente codice
 Esegui il codice per vedere il saluto
 >       go run .
 
-Fantastico! Hai creato il primo programma e adesso sei pronto ad imparare il linguaggio *Go*
+Fantastico! Benvenuto nel mondo dei *Gophers*
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
@@ -152,10 +152,10 @@ In *Go* l'espressione dell'istruzione *if* non deve essere necessariamente racch
 >     }
 
 L'istruzione *if*, come per il ciclo *for*, può iniziare con una breve istruzione da eseguire prima della condizione  
->     if power := math.Pow(x, n); power < 1024 {
+>     if power := math.Pow(x, n); power < limit {
 >		fmt.Println(power)
 >     } else {
->	    fmt.Printf("%g >= %g\n", power, 1024)
+>	    fmt.Printf("%g >= %g\n", power, limit)
 >     }
 
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
