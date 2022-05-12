@@ -4,8 +4,6 @@ Guida sintetica e semplice del linguaggio *Go* (prima edizione in lingua italian
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
 
-Adesso sei pronto a scrivere il primo programma *Go*
-
 Apri un prompt dei comandi e crea una directory progetto per il primo codice sorgente *Go*
 >     mkdir progetto
 >     cd progetto
@@ -30,7 +28,6 @@ Apri l'editor di testo e scrivi il seguente codice
 Esegui il codice per vedere il saluto
 >       go run .
 
-Fantastico! Hai creato il primo programma *Go*
 
 # Pacchetti
 Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
