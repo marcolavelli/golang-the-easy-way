@@ -146,7 +146,7 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     } 
 
 # If
-In *Go* a differenza di *C* l'espressione dell'istruzione *if* non deve essere necessariamente racchiusa tra parentesi
+In *Go* l'espressione dell'istruzione *if* non deve essere necessariamente racchiusa tra parentesi
 >     if x < 0 {
 >         return x
 >     }
