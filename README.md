@@ -4,6 +4,8 @@ Traduzione, approfondimento e semplificazione in lingua italiana della Guida uff
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
 
+Adesso sei pronto a scrivere il primo programma *Go*
+
 Apri un prompt dei comandi e crea una directory progetto per il primo codice sorgente *Go*
 >     mkdir progetto
 >     cd progetto
