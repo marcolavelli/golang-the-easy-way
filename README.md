@@ -146,13 +146,16 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     } 
 
 # If
-Le istruzioni di Go se sono come i suoi cicli for; l'espressione non deve essere necessariamente racchiusa tra parentesi ( ) ma le parentesi graffe { } sono obbligatorie
+In *Go* a differenza di *C* l'espressione dell'istruzione *if* non deve essere necessariamente racchiusa tra parentesi
 >     if x < 0 {
 >         return x
 >     }
 
-Come per, l'istruzione if può iniziare con una breve istruzione da eseguire prima della condizione.
+L'istruzione *if*, come per il ciclo *for*, può iniziare con una breve istruzione da eseguire prima della condizione  
+>     if power := math.Pow(x, n); potenza < 1024 {
+>		return power
+>     } else {
+>	    fmt.Printf("%g >= %g\n", power, 1024)
+>     }
 
-Le variabili dichiarate dall'istruzione sono nell'ambito solo fino alla fine dell'if.
-
-Le variabili dichiarate all'interno di un'istruzione if short sono disponibili anche all'interno di uno qualsiasi dei blocchi else.
+Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
