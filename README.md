@@ -4,11 +4,11 @@ Guida sintetica e semplice del linguaggio *Go* (prima edizione in lingua italian
 # Introduzione
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
 
-Apri un prompt dei comandi e crea una directory progetto per il tuo primo codice sorgente *Go*
+Apri un prompt dei comandi e crea una directory *progetto* per il tuo primo codice sorgente *Go*
 >     mkdir progetto
 >     cd progetto
 
-Abilita il monitoraggio delle dipendenze: crea un file go.mod e assegna il nome del modulo in cui si troverà il codice
+Abilita il monitoraggio delle dipendenze: crea un file *go.mod* e assegna il nome del modulo in cui si troverà il codice
 >     go mod init ciao.go/progetto
 
 Crea un file *ciao.go* e verifica la struttura del progetto
