@@ -94,7 +94,7 @@ Le variabili possono essere dichiare senza un valore esplicito e viene assegnato
 
 # Tipi di base
 
-###### Tabella tipi di base suddivisi per dimensione
+###### Tabella tipi di base in Go suddivisi per dimensione occupata
 | size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | | bool |
