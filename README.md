@@ -87,10 +87,14 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >         c, python, java := true, false, "no!"
 >         ...
 
+Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
+>     var numerico int          =>  numerico = 0
+>     var booleano bool         =>  booleano = false
+>     var vocabolo string       =>  vocabolo = ""  
+
 # Tipi di base
 Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *uintptr*, la sua dimensione dipende dall'architettura della macchina
 
-Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
 | size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | | bool |
@@ -103,10 +107,7 @@ Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
 | | | | float32 | float64 |
 | | | | complex32 | complex64 |
 
-Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
->     var numerico int          =>  numerico = 0
->     var booleano bool         =>  booleano = false
->     var vocabolo string       =>  vocabolo = ""  
+Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
 
 # Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
