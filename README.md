@@ -93,8 +93,8 @@ Le variabili possono essere dichiare senza un valore esplicito e viene assegnato
 >     var vocabolo string       =>  vocabolo = ""  
 
 # Tipi di base
-Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *uintptr*, la sua dimensione dipende dall'architettura della macchina
 
+Tabella tipi di base
 | size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | | bool |
@@ -108,6 +108,10 @@ Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *u
 | | | | complex32 | complex64 |
 
 Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
+
+Il tipo *int* è consigliato per un valore intero
+
+Le dimensioni dei tipi *int, *uint* e *uintptr* dipendono dall'architettura della macchina
 
 # Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
