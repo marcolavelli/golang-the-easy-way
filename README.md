@@ -173,7 +173,7 @@ Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche
 >       fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
 >     }
 
-Un'altra importante differenza è che i casi di *switch* di *Go* non devono necessariamente essere costanti e i valori coinvolti non devono essere numeri interi.
+Un'altra differenza è che i casi di *switch* di *Go* non devono necessariamente essere costanti e i valori coinvolti non devono essere numeri interi
 
 >     t := time.Now()
 >     switch {
@@ -185,5 +185,5 @@ Un'altra importante differenza è che i casi di *switch* di *Go* non devono nece
 >		fmt.Println("Good evening.")
 >     
 
-L'istruzione *switch* senza una condizione può essere un modo pulito per scrivere lunghe catene *if-then-else*.
+L'istruzione *switch* senza una condizione può essere un modo pulito per scrivere lunghe catene *if-then-else*
 
