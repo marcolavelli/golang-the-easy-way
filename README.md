@@ -88,9 +88,9 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >         ...
 
 Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
->     var numerico int          =>  numerico = 0
->     var booleano bool         =>  booleano = false
->     var vocabolo string       =>  vocabolo = ""  
+>     var numerico int      // numerico = 0
+>     var booleano bool     // booleano = false
+>     var vocabolo string   // vocabolo = ""  
 
 # Tipi di base
 
