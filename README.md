@@ -88,7 +88,9 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >         ...
 
 # Tipi di base
+Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *uintptr*, la sua dimensione dipende dall'architettura della macchina
 
+In *Go* ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 | size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | | bool |
@@ -100,10 +102,6 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 | | | | rune |
 | | | | float32 | float64 |
 | | | | complex32 | complex64 |
-
-Il tipo *int* è consigliato per un valore intero e, come per i tipi *uint* e *uintptr*, la sua dimensione dipende dall'architettura della macchina
-
-In *Go* ci sono anche due alias, il tipo *byte* che equivale a *uint8* e il tipo *rune* che vale *int32*
 
 Le variabili possono essere dichiare senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
 >     var numerico int          =>  numerico = 0
