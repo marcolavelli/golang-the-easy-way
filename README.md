@@ -149,15 +149,15 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 # If
 *Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione  
 >     if x > limit {
->       return limit - 1
+>         return limit - 1
 >     } else {
->	    return x
+>	      return x
 >     }     
 
 >     if y := limit - 1; x <= limit {
->		return x
+>         return x
 >     } else {
->	    return y
+>	      return y
 >     }
 
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
@@ -166,24 +166,25 @@ Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche
 *Go* ha un'istruzione *switch-case* simile a quella in *C*, *C++*, *Java*, *JavaScript* e *PHP*, tranne per il fatto che *Go* esegue solo il caso selezionato, non tutti i casi che seguono: l'istruzione *break* non è necessaria alla fine di ogni caso in quanto è fornita automaticamente
 >     switch os := runtime.GOOS; os {
 >     case "darwin":
->       fmt.Println("Go runs on OS X.")
+>         fmt.Println("Go runs on OS X.")
 >     case "linux":
->       fmt.Println("Go runs on Linux.")
+>         fmt.Println("Go runs on Linux.")
 >     default:
->       fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
+>         fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
 >     }
 
 Un'altra differenza è che i casi previsti non devono essere obbligatoriamente costanti e i valori possono non essere numeri interi
 
 >     t := time.Now()
+>     
 >     switch {
 >     case t.Hour() < 12:
->		fmt.Println("Good morning!")
+>	      fmt.Println("Good morning!")
 >     case t.Hour() < 17:
->		fmt.Println("Good afternoon.")
+>	      fmt.Println("Good afternoon.")
 >     default:
->		fmt.Println("Good evening.")
->     
+>	      fmt.Println("Good evening.")
+>     }
 
 L'istruzione *switch* senza una condizione può essere un modo pulito per scrivere lunghe catene *if-then-else*
 
