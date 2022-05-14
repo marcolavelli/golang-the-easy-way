@@ -31,7 +31,7 @@ Esegui il codice per vedere il saluto
 Fantastico! Benvenuto nel mondo dei *Gophers* 
 
 # Pacchetti
-Ogni programma *Go* è composto da pacchetti e inizia ad essere eseguito nel pacchetto *main*
+Ogni programma *Go* è composto da pacchetti e l'esecuzione del programma inizia dal pacchetto *main*
 >     package main
 
 Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del percorso di importazione
