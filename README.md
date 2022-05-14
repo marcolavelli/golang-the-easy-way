@@ -147,12 +147,12 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 >     } 
 
 # If
-*Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione   
+*Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione  
 >     if x > limit {
 >       return limit
 >     }
 
->     if y := limit; x < limit {
+>     if y := limit; x <= limit {
 >		return x
 >     } else {
 >	    return y
