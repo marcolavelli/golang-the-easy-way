@@ -173,7 +173,7 @@ Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche
 >       fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
 >     }
 
-Un'altra differenza è che i casi di *switch* non devono necessariamente essere costanti e i valori coinvolti non devono essere numeri interi
+Un'altra differenza è che i *case* non devono essere costanti e i valori coinvolti non devono essere numeri interi
 
 >     t := time.Now()
 >     switch {
