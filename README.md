@@ -88,7 +88,7 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 >         ...
 
 # Tipi di base
-I tipi di base in *Go* suddivisi per dimensione sono
+
 | size undef | size 08 bit | size 16 bit | size 32 bit | size 64 bit |
 | :---------- | :---------- | :---------- | :---------- | :---------- |
 | | bool |
