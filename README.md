@@ -109,8 +109,6 @@ Le variabili possono essere dichiare senza un valore esplicito e viene assegnato
 
 Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
 
-Il tipo *int* è consigliato da utilizzare per un valore numerico intero
-
 Le dimensioni dei tipi *int*, *uint* e *uintptr* dipendono dall'architettura della macchina
 
 # Conversione di tipo
