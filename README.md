@@ -163,7 +163,7 @@ Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
 
 # Switch
-*Go* ha un'istruzione *switch-case* simile a quella di *C*, *C++*, *Java*, *JavaScript* e *PHP*, tranne per il fatto che *Go* esegue solo il caso selezionato, non tutti i casi che seguono: l'istruzione *break* non è necessaria alla fine di ogni caso in quanto è fornita automaticamente
+*Go* ha un'istruzione *switch-case* simile a quella di *C*, *C++*, *Java*, *JavaScript* e *PHP*, tranne per il fatto che *Go* esegue solo il caso selezionato e non tutti i casi che seguono: l'istruzione *break* non è necessaria alla fine di ogni caso in quanto è fornita automaticamente
 >     switch os := runtime.GOOS; os {
 >     case "darwin":
 >         fmt.Println("Go runs on OS X.")
