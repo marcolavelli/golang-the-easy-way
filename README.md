@@ -207,7 +207,7 @@ L'operatore *&* genera un puntatore al suo operando
 
 L'operatore * permette di accedere al valore cui il puntatore fa riferimento
 >     fmt.Println(*p)
->     *p = 271
+>     *p = 2
 
 Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 
