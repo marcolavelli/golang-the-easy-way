@@ -220,10 +220,9 @@ Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 >
 >     var v = Vertex{1, 2}
 
-I campi di una *struct* sono accessibili tramite un punto
+I campi di una *struct* sono accessibili tramite un punto oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
 >     v.X = 1
-
-oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
+>       
 >     p := &v
 >     p.X = 3
 
