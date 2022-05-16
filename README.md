@@ -225,7 +225,7 @@ I campi di una *struct* sono accessibili tramite un punto
 
 oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
 >     p := &v
->     p.X = 271
+>     p.X = 3
 
 Le *struct literals* sono usate per creare nuove istanze e l'ordine dei campi è irrilevante
->     v2 := Vertex {Y: 1, X: 27}
+>     v2 := Vertex {Y: 6, X: 4}
