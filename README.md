@@ -195,4 +195,4 @@ L'istruzione *switch* senza una condizione può essere un modo pulito per scrive
 >     }
 >     fmt.Println("Print this before loop")
 
-L'istruzione *defer* rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna.
+L'istruzione *defer* rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna
