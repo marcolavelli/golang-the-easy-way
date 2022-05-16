@@ -212,7 +212,7 @@ L'operatore * permette di accedere al valore cui il puntatore fa riferimento
 Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 
 # Struct
-*Go* ha una struttura di campi *struct* equivalente per compiti alla *classe* dei linguaggi basati sulla programmazione orientata agli oggetti
+*Go* ha una collezione di campi *struct* equivalente per compiti alle *classi* dei linguaggi basati sulla programmazione orientata agli oggetti
 >     type Vertex struct {
 >	      X int
 >	      Y int
