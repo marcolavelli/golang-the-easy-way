@@ -227,7 +227,7 @@ oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
 >     p := &v
 >     p.X = 271
 
-Le *struct literals NameFIeld: value* sono utilizzate per creare nuove istanzecon sintassi
+Le *struct literals* sono usate per creare nuove istanze
 >     v2 := Vertex {Y: 1, X: 27}
 
 Si noti che l'ordine dei campi è irrilevante
