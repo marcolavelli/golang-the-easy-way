@@ -198,14 +198,14 @@ L'istruzione *switch* senza una condizione può essere un modo pulito per scrive
 La chiamata di funzione posticipata è inserita in uno stack e viene eseguita in ordine *last-in-first-out*
 
 # Pointers
-*Go* ha un tipo puntatore **T* che contiene l'indirizzo di memoria a un valore *T
+*Go* ha un tipo puntatore **T* che contiene l'indirizzo di memoria a un valore *T*
 >     var p *int
 
-L'operatore & genera un puntatore al suo operando
+L'operatore *&* genera un puntatore al suo operando
 >     i := 71
 >     p = &i
 
-L'operatore * indica il valore sottostante del puntatore
+L'operatore *** indica il valore sottostante del puntatore
 >     fmt.Println(*p)
 >     *p = 271
 
