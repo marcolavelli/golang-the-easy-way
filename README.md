@@ -193,6 +193,8 @@ L'istruzione *switch* senza una condizione può essere un modo pulito per scrive
 >     for i:= 0; i < 10; i++ {
 >	      defer fmt.Println(i)
 >     }
->     fmt.Println("Print this before loop")
+>     fmt.Println("Print this before the loop and its result will be reversed")
 
 L'istruzione *defer* rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna
+
+La chiamata di funzione posticipata è inserita in uno stack e viene eseguita in ordine *last-in-first-out*
