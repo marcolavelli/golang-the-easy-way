@@ -223,9 +223,9 @@ Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 I campi di una *struct* sono accessibili tramite un punto
 >     v.X = 1
 
-*Go* accedere ai campi di una *struct* tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
+oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
 >     p := &v
 >     p.X = 271
 
-Una *struct literal* usa la sintassi *Name:* e l'ordine dei campi è irrilevante
+I *struct literls* sono usati per creare istanze struct con sintassi *NameFIeld: value*, l'ordine è irrilevante
 >     v2 := Vertex {Y: 1, X: 27}
