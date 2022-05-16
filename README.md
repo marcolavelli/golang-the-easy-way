@@ -205,7 +205,7 @@ L'operatore *&* genera un puntatore al suo operando
 >     i := 71
 >     p = &i
 
-L'operatore *** indica il valore sottostante del puntatore
+L'operatore * permette di accedere al valore cui il puntatore fa riferimento
 >     fmt.Println(*p)
 >     *p = 271
 
