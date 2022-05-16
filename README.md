@@ -202,11 +202,30 @@ La chiamata di funzione posticipata è inserita in uno stack e viene eseguita in
 >     var p *int
 
 L'operatore *&* genera un puntatore al suo operando
->     i := 71
+>     i := 1
 >     p = &i
 
 L'operatore * permette di accedere al valore cui il puntatore fa riferimento
 >     fmt.Println(*p)
 >     *p = 271
 
-Questo è noto come "dereferenziazione" o "indirizzamento"
+Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
+
+# Struct
+*Go* ha una collezione *struct*
+>     type Vertex struct {
+>	      X int
+>	      Y int
+>	  }
+>
+>     var v = Vertex{1, 2}
+
+I campi di una *struct* sono accessibili tramite un punto
+>     v.X = 1
+
+È possibile accedere ai campi di una *struct* tramite un puntatore *struct*
+>     p := &v
+>     p.X = 271
+
+*Go* consente di scrivere solo p.X, senza l'esplicita dereferenza *(*p).X*
+
