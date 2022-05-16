@@ -212,7 +212,7 @@ L'operatore * permette di accedere al valore cui il puntatore fa riferimento
 Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 
 # Struct
-*Go* ha una collezione di campi *struct* equivalente per compiti alla *classe* dei linguaggi basati sulla programmazione orientata agli oggetti
+*Go* ha una struttura di campi *struct* equivalente per compiti alla *classe* dei linguaggi basati sulla programmazione orientata agli oggetti
 >     type Vertex struct {
 >	      X int
 >	      Y int
@@ -227,5 +227,5 @@ oppure tramite un puntatore p.X, senza l'esplicita dereferenza *(*p).X*
 >     p := &v
 >     p.X = 271
 
-I *struct literls* sono usati per creare istanze struct con sintassi *NameFIeld: value*, l'ordine è irrilevante
+Gli *struct literls* sono usati per creare nuove istanze con sintassi *NameFIeld: value*, l'ordine è irrilevante
 >     v2 := Vertex {Y: 1, X: 27}
