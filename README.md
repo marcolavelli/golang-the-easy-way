@@ -188,3 +188,11 @@ Un'altra differenza è che i casi previsti possono non essere costanti e i valor
 
 L'istruzione *switch* senza una condizione può essere un modo pulito per scrivere lunghe catene *if-then-else*
 
+# Defer
+*Go* ha un'istruzione differita, la chiamata *defer*
+>     for i:= 0; i < 10; i++ {
+>	      defer fmt.Println(i)
+>     }
+>     fmt.Println("Print this before loop")
+
+L'istruzione *defer* rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna.
