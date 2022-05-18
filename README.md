@@ -119,7 +119,7 @@ L'espressione *T(v)* converte il valore *v* nel tipo *T*
 A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richiede una conversione esplicita
 
 # Costanti
-Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il loro nome inizia com la prima lettera maiuscola
+Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il loro nome inizia con la prima lettera maiuscola
 >     const Pi = 3.14
 
 Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
