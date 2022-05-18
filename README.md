@@ -131,7 +131,7 @@ Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
 >     }
     
 Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e virgola
-- *init* : la dichiarazione iniziale di variabili visibili nell'ambito del ciclo
+- *init* : la dichiarazione iniziale di variabili, visibili nell'ambito del ciclo
 - *cond* : l'espressione di condizione valutata prima di ogni iterazione
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
