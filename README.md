@@ -230,7 +230,7 @@ Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei cam
 >     v2 := Vertex {Y: 6, X: 4}
 
 # Array
-*Go* ha un tipo *array* *n(T)* di *n* valori di tipo *T*
+*Go* ha un tipo *array* *n(T)*
 >     var a [10]int
 
-La lunghezza di un array fa parte del suo tipo, quindi gli array non possono essere ridimensionati
+La lunghezza *n* di un array fa parte del suo tipo, quindi gli array non possono essere ridimensionati
