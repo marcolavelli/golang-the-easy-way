@@ -107,7 +107,7 @@ Le variabili possono essere dichiarate senza un valore esplicito e viene assegna
 | | | | float32 | float64 |
 | | | | complex32 | complex64 |
 
-Il tipo *byte* equivale a *uint8* mentre il tipo *rune* vale *int32*
+Il tipo *byte* è equivalente al tipo *uint8* mentre il tipo *rune* al tipo *int32*
 
 Le dimensioni dei tipi *int*, *uint* e *uintptr* dipendono dall'architettura della macchina
 
