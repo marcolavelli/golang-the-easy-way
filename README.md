@@ -61,7 +61,7 @@ Una funzione può accettare zero o più parametri e può restituire un numero qu
 >         return y, x
 >     }
 
-Se due o più parametri consecutivi sono dello stesso tipo è possibile ometterlo da tutti tranne l'ultimo
+Se due o più parametri consecutivi sono dello stesso tipo allora è possibile omettere il tipo da tutti i parametri tranne nell'ultimo
 >     func add(x, y int) int {
 >         return x + y
 >     }   
