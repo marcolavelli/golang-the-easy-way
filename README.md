@@ -241,4 +241,4 @@ La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
 Una slice non memorizza i dati di un array e quindi la modifica dei suo elementi  modifica gli elementi dell'array
 >     slice[4] = 0
->     fmt.Println(a[4])         // print 0
+>     fmt.Println(array[4])         // print 0
