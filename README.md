@@ -231,7 +231,13 @@ Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei cam
 
 # Array
 *Go* ha un tipo array *[n]T* di dimensione fissa
->     var a [10]int
+>     var primes [4]int
+>     primes[0] = 2
+>     primes[1] = 3
+>     primes[2] = 5
+>     primes[3] = 7
+>     
+>     primes := [4]int{2, 3, 5, 7}
 
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
