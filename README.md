@@ -226,11 +226,11 @@ I campi di una *struct* sono accessibili tramite un punto *.X* oppure tramite un
 >     p := &v
 >     p.X = 3
 
-Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei campi è irrilevante
+Le *struct literals* sono utilizzate per creare nuove istanze e l'ordine dei campi è irrilevante
 >     v2 := Vertex {Y: 6, X: 4}
 
 # Array
-*Go* ha un tipo array *[n]T* di dimensione fissa
+*Go* ha un tipo *array* *[n]T* di dimensione fissa
 >     var primes [6]int
 >     primes[0] = 2
 >     primes[1] = 3
@@ -244,15 +244,19 @@ Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei cam
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
 # Slices
-*Go* ha un tipo slice *[ ]T* di dimensioni dinamiche degli elementi di un array
+*Go* ha un tipo *slice* *[ ]T* di dimensioni dinamiche degli elementi di un *array*
 >     var threeprimes []int = primes[0:3]
 
 >     sixprimes := primes[0:5]
 
-Una slice è una vista e non memorizza i dati quindi la modifica di un suo elemento comporta la modifica dell'elemento nell'array sottostante
+Una *slice* è una vista e non memorizza i dati quindi la modifica di un suo elemento comporta la modifica dell'elemento nell'*array* sottostante
 >     threeprimes[2] = 0
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
-Altre slice che condividono lo stesso array sottostante vedranno tali modifiche
+Altre *slice* che condividono lo stesso *array* sottostante vedranno tali modifiche
 >     sixprimes := primes[0:5]
 >     fmt.Println(sixprimes)        // print 2, 3, 0, 7, 11 
+
+Le *slice literals* sono come un *array literals* senza la lunghezza
+>     [3]bool{true, true, false}
+>     [ ]bool{true, true, false}
