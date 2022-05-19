@@ -242,9 +242,9 @@ Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei cam
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
 # Slices
-*Go* ha un tipo slice *[low : high]T* che è un una vista flessibile e di dimensioni dinamiche negli elementi di un array
->     var s []int = a[0:4]
+*Go* ha un tipo slice *[]T = array[low : high]* una vista flessibile e di dimensioni dinamiche negli elementi di un array
+>     var s []int = primes[0:2]
 
 Una slice non memorizza i dati di un array e quindi la modifica dei suo elementi  modifica gli elementi dell'array
->     s[4] = 0
->     fmt.Println(a[4])         // print 0
+>     s[2] = 0
+>     fmt.Println(primes[2])         // print 0
