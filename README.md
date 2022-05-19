@@ -246,7 +246,8 @@ La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 # Slices
 *Go* ha un tipo slice *[ ]T* di dimensioni dinamiche degli elementi di un array
 >     var threeprimes []int = primes[0:3]
->     	sixprimes := primes[0:5]
+
+>     sixprimes := primes[0:5]
 
 Una slice non memorizza i dati di un array e quindi la modifica di un elemento della slice modifica l'elemento dell'array
 >     threeprimes[2] = 0
