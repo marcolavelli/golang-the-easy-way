@@ -236,7 +236,7 @@ Le *struct literals* sono utilizzare per creare nuove istanze e l'ordine dei cam
 >     primes[1] = 3
 >     primes[2] = 5
 >     primes[3] = 7
->     
+
 >     primes := [4]int{2, 3, 5, 7}
 
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
