@@ -257,5 +257,5 @@ Altre *slice* che condividono lo stesso *array* sottostante vedranno tali modifi
 >     sixprimes := primes[0:5]
 >     fmt.Println(sixprimes)        // print 2, 3, 0, 7, 11 
 
-Le *slice literals* sono come un *array literals* senza la lunghezza
+Le *slice literals* sono come *array literals* senza la lunghezza
 >     []bool{true, true, false}
