@@ -249,7 +249,7 @@ La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
 >     sixprimes := primes[0:5]
 
-Una slice è una vista e non memorizza i dati di un array, la modifica di un elemento comporta la modifica dell'elemento nell'array sottostante
+Una slice è una vista e non memorizza i dati quindi la modifica di un suno elemento comporta la modifica dell'elemento nell'array sottostante
 >     threeprimes[2] = 0
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
