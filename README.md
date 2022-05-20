@@ -260,7 +260,7 @@ e altre *slice* che condividono lo stesso *array* sottostante vedranno tali modi
 Le *slice literals* sono come *array literals* senza la lunghezza
 >     []bool{true, true, false}
 
-Durante lo *slicing* si possono omettere i limiti alto e/o basso, le *slice* seguenti sono equivalenti
+Durante lo *slicing* si possono omettere i limiti alto e/o basso
 >     sixprimes[0:6]
 >     sixprimes[0:]
 >     sixprimes[:6]
@@ -268,10 +268,12 @@ Durante lo *slicing* si possono omettere i limiti alto e/o basso, le *slice* seg
 
 Una *slice* ha sia una lunghezza che una capacità
 
-La lunghezza è il numero di elementi che contiene, mentre la capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
+La lunghezza è il numero di elementi che contiene
+
+La capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
 >     someprimes := primes[3:]
 >     fmt.Printf("len=%d cap=%d \n", len(s), cap(s))    // len=3 cap=3
 
-La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, con il *re-slicing* può essere estesa
+La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, può essere estesa con il *re-slicing* 
 >     someprimes = primes[1:5]                          // len=4 cap=5
 >     someprimes = primes[1:]                           // len=5 cap=5
