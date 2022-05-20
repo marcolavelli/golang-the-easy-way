@@ -264,4 +264,4 @@ Durante lo slicing si possono omettere i limiti alto e/o basso, queste *slice* s
 >     sixprimes[0:6]
 >     sixprimes[0:]
 >     sixprimes[:6]
->     sixprimes[6:6]  
+>     sixprimes[:]  
