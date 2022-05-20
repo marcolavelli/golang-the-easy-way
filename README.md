@@ -253,14 +253,14 @@ Una *slice* è una vista di un *array* e non memorizza i dati, la modifica di un
 >     threeprimes[2] = 0
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
-e altre *slice* che condividono lo stesso *array* sottostante vedranno tali modifiche
+e altre *slices* che condividono lo stesso *array* sottostante vedranno tali modifiche
 >     fiveprimes := primes[0:5]
 >     fmt.Println(fiveprimes)        // print 2, 3, 0, 7, 11 
 
 Le *slice literals* sono come *array literals* senza la lunghezza
 >     []bool{true, true, false}
 
-Durante lo *slicing* si possono omettere i limiti alto e/o basso
+Durante lo *slicing* si possono omettere i limiti alto e basso
 >     sixprimes[0:6]
 >     sixprimes[0:]
 >     sixprimes[:6]
