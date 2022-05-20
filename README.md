@@ -260,7 +260,7 @@ e altre *slice* che condividono lo stesso *array* sottostante vedranno tali modi
 Le *slice literals* sono come *array literals* senza la lunghezza
 >     []bool{true, true, false}
 
-Durante lo *slicing* si possono omettere i limiti alto e/o basso, queste *slice* sono equivalenti
+Durante lo *slicing* si possono omettere i limiti alto e/o basso, le *slice* seguenti sono equivalenti
 >     sixprimes[0:6]
 >     sixprimes[0:]
 >     sixprimes[:6]
