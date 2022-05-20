@@ -271,9 +271,9 @@ Una *slice* ha sia una lunghezza che una capacità
 La lunghezza è il numero di elementi che contiene
 
 La capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
->     someprimes := primes[3:]
->     fmt.Printf("len=%d cap=%d \n", len(s), cap(s))    // len=3 cap=3
+>     someprimes := primes[3:]      // len=3 cap=3
 
 La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, può essere estesa con il *re-slicing* 
->     someprimes = primes[1:5]                          // len=4 cap=5
->     someprimes = primes[1:]                           // len=5 cap=5
+>     someprimes = primes[1:5]      // len=4 cap=5
+>     someprimes = primes[1:]       // len=5 cap=5
+>     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
