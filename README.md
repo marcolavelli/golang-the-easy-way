@@ -278,7 +278,9 @@ La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, p
 >     someprimes = primes[1:]       // len=5 cap=5
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
-Il valore zero di una slice è *nil*, una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
+Il valore zero di una slice è *nil*
+
+una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
 
 Una *slice* può essere creata con la funzione built-in *make*
 >     bestprimes := make([]int, 10)
