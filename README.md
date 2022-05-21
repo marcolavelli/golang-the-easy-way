@@ -130,7 +130,7 @@ Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
 >         fmt.Println(i)
 >     }
     
-Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e virgola
+Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e virgola:
 - *init* : la dichiarazione iniziale di variabili, visibili nell'ambito del ciclo
 - *cond* : l'espressione di condizione valutata prima di ogni iterazione
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
@@ -253,7 +253,7 @@ Una *slice* è una vista di un *array* e non memorizza i dati, la modifica di un
 >     threeprimes[2] = 0
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
-e altre *slices* che condividono lo stesso *array* sottostante vedranno tali modifiche
+Anche altre *slices* che condividono lo stesso *array* sottostante vedranno tali modifiche
 >     fiveprimes := primes[0:5]
 >     fmt.Println(fiveprimes)        // print 2, 3, 0, 7, 11 
 
