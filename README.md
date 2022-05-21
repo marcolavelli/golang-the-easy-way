@@ -266,11 +266,9 @@ Durante lo *slicing* si possono omettere i limiti alto e basso
 >     sixprimes[:6]
 >     sixprimes[:]  
 
-Una *slice* ha sia una lunghezza che una capacità
-
-La lunghezza è il numero di elementi che contiene
-
-La capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
+Una *slice* ha sia una lunghezza che una capacità:
+- la lunghezza è il numero di elementi che contiene
+- la capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
 >     someprimes := primes[3:]      // len=3 cap=3
 
 La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, può essere estesa con il *re-slicing* 
@@ -279,8 +277,9 @@ La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, p
 >     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 
 Il valore zero di una slice è *nil*
+>     var noprimes []int                   // len=0 cap=0   
 
-una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
+Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
 
 Una *slice* può essere creata con la funzione built-in *make*
 >     bestprimes := make([]int, 10)
