@@ -75,6 +75,17 @@ Una funzione può avere valori di ritorno "denominati" e restituirli con un'istr
 
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
 
+## Funzioni values e closure
+In *Go* le funzioni sono anche valori e possono essere utilizzate come argomenti o valori di ritorno
+>     func compute(add func(int, int) int) int {
+>         return split(3, 4)
+>     }         
+
+I valori di funzione possono essere utilizzati come argomenti di funzione e valori di ritorno.
+Function values may be used as function arguments and return values.
+Le funzioni Go possono essere chiusure. Una chiusura è un valore di funzione che fa riferimento a variabili esterne al suo corpo. La funzione può accedere e assegnare alle variabili di riferimento; in questo senso la funzione è "vincolata" alle variabili.
+
+
 # Variabili
 L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo viene dopo i nomi delle variabili
 >     var c, python, java bool
@@ -259,7 +270,7 @@ Anche altre *slices* che condividono lo stesso *array* sottostante vedranno tali
 
 ## Slice literals
 Le *slice literals* sono come *array literals* senza la lunghezza
->     []bool{true, true, false}
+>     sl := []bool{true, true, false}
 
 ## Slice length e capacity
 Una *slice* ha sia una lunghezza che una capacità:
@@ -288,7 +299,7 @@ Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sott
 Una *slice* può essere creata con la funzione built-in *make*, è il modo per creare un *array* di dimensioni dinamiche
 >     bestprimes := make([]int, 10)
 
-È comune aggiungere nuovi elementi a una *slice* utilizzando la funzione built-in *append*
+La funzione built-in *append* è utilizzata per aggiungere elementi ad una *slice* 
 >     bestprimes = append(bestprimes, 13)
 
 
@@ -313,10 +324,17 @@ Se si vuole solo l'indice, si può anche omettere la seconda variabile
 
 # Map
 *Go* ha un tipo *map* che associa le chiavi ai valori
->     var m map[string]Vertex
+>     var m map[string]int
 
 Il valore zero di una mappa è *nil*, una *nil map* non ha chiavi e non si possono aggiungerne
 
 La funzione *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
->     m := make(map[string]Vertex)
+>     m := make(map[string]int)
+
+Le *map literlas* ono come *struct literals* ma le chiavi sono obbligatorie
+>     ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
+
+La funzione buil-in *delete* è utilizzata per eliminare un elemento da una *map*
+>     ml := delete("due": 2)
+
 
