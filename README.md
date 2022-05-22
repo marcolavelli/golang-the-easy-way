@@ -315,9 +315,7 @@ Se si vuole solo l'indice, si può anche omettere la seconda variabile
 *Go* ha un tipo *map* che associa le chiavi ai valori
 >     var m map[string]Vertex
 
-Il valore zero di una mappa è *nil*
-
-Una *nil map* non ha chiavi, né si possono aggiungere chiavi
+Il valore zero di una mappa è *nil* e una *nil map* non ha chiavi, né si possono aggiungere chiavi
 
 La funzione *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
 >     m := make(map[string]Vertex)
