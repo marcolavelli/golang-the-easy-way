@@ -75,17 +75,6 @@ Una funzione può avere valori di ritorno "denominati" e restituirli con un'istr
 
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
 
-## Funzioni values e closure
-In *Go* le funzioni sono anche valori e possono essere utilizzate come argomenti o valori di ritorno
->     func compute(add func(int, int) int) int {
->         return split(3, 4)
->     }         
-
-I valori di funzione possono essere utilizzati come argomenti di funzione e valori di ritorno.
-Function values may be used as function arguments and return values.
-Le funzioni Go possono essere chiusure. Una chiusura è un valore di funzione che fa riferimento a variabili esterne al suo corpo. La funzione può accedere e assegnare alle variabili di riferimento; in questo senso la funzione è "vincolata" alle variabili.
-
-
 # Variabili
 L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo viene dopo i nomi delle variabili
 >     var c, python, java bool
@@ -322,7 +311,7 @@ Nell'istruzione *range* si può omettere l'indice o il valore assegnando *_*
 Se si vuole solo l'indice, si può anche omettere la seconda variabile
 >     for i := range pow
 
-# Map
+# Mappe
 *Go* ha un tipo *map* che associa le chiavi ai valori
 >     var m map[string]int
 
@@ -338,3 +327,34 @@ La funzione buil-in *delete* è utilizzata per eliminare un elemento da una *map
 >     ml := delete("due": 2)
 
 
+## Funzioni valori e closure
+In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
+
+>     var adder := func(x, y float64) float64 {
+>         return x + y
+>     } 
+>     
+>     func compute(fn func(float64, float64) float64) float64 {
+>         return fn(3, 4)
+>     } 
+>     
+>     fmt.Println(compute(adder))
+
+La funzione *Go* può essere una *closure*, un valore di
+
+Una *closure* è un valore di funzione che fa riferimento a variabili esterne al suo corpo.
+
+>     func fibonacci() func() int {
+>         a, b := 0, 1
+>         return func() int {
+>             a, b = b, a+b
+>             return a
+>         }
+>     }
+>     
+>     func main() {
+>         f := fibonacci()
+>         fmt.Println(f(), f(), f(), f(), f())
+>     }
+
+La funzione può accedere e assegnare alle variabili di riferimento, in questo senso la funzione è "vincolata" alle variabili
