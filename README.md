@@ -303,3 +303,11 @@ Il *ranging* di una *slice* restituisce due valori:
 >     for i, v := range pow {
 >         fmt.Printf("2**%d = %d \n", i, v)
 >     }
+
+Nell'istruzione *range* si può omettere l'indice o il valore assegnando *_*
+>     for i, _ := range pow
+>     for _, value := range pow
+
+Se si vuole solo l'indice, si può anche omettere la seconda variabile
+>     for i := range pow
+
