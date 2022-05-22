@@ -290,3 +290,16 @@ Una *slice* può essere creata con la funzione built-in *make*, è il modo per c
 
 È comune aggiungere nuovi elementi a una *slice* utilizzando la funzione built-in *append*
 >     bestprimes = append(bestprimes, 13)
+
+
+# Range
+*Go* ha un'istruzione *range* per iterare una *slice* o una *map*
+
+Il *ranging* di una *slice* restituisce due valori:
+- il primo è l'indice
+- il secondo è una copia dell'elemento in quell'indice
+>     var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+>     
+>     for i, v := range pow {
+>         fmt.Printf("2**%d = %d\n", i, v)
+>     }
