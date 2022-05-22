@@ -261,7 +261,7 @@ Anche altre *slices* che condividono lo stesso *array* sottostante vedranno tali
 Le *slice literals* sono come *array literals* senza la lunghezza
 >     []bool{true, true, false}
 
-## Slicing
+## Slice length e capacity
 Una *slice* ha sia una lunghezza che una capacità:
 - la lunghezza è il numero di elementi che contiene
 - la capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
@@ -284,11 +284,9 @@ Il valore zero di una slice è *nil*
 
 Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
 
-## Built-in slice
-Una *slice* può essere creata con la funzione built-in *make*
+## Slice built-in
+Una *slice* può essere creata con la funzione built-in *make*, è il modo per creare un *array* di dimensioni dinamiche
 >     bestprimes := make([]int, 10)
 
-Questo è il modo per creare un *array* di dimensioni dinamiche
-
-È comune aggiungere nuovi elementi a una *slice* con la funzione built-in *append*
+È comune aggiungere nuovi elementi a una *slice* utilizzando la funzione built-in *append*
 >     bestprimes = append(bestprimes, 13)
