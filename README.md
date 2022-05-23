@@ -192,7 +192,7 @@ for {
 ```
 
 # If
-*Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione  
+*Go* ha un'istruzione *if* che non deve essere necessariamente racchiusa tra parentesi ( ) 
 ```go
 if x > limit {
     return limit - 1
@@ -200,6 +200,8 @@ if x > limit {
     return x
 }     
 ```
+
+L'istruzione *if*  può iniziare con una breve istruzione da eseguire prima della condizione 
 ```go
 if y := limit - 1; x <= limit {
     return x
@@ -207,7 +209,6 @@ if y := limit - 1; x <= limit {
     return y
 }
 ```
-
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
 
 # Switch
@@ -439,7 +440,6 @@ delete(m, "due")
 
 # Funzioni valore
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
-
 ```go
 var adder := func(x, y float64) float64 {
     return x + y
