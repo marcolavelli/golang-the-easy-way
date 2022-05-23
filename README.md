@@ -348,7 +348,7 @@ In *Go* una funzione è anche valore e può essere utilizzata come argomento o v
 >     fmt.Println(compute(adder))
 
 # Funzioni closure
-In *Go* una funzione può essere una *closure*
+In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" alle variabili esterne al suo corpo
 
 >     func fibonacci() func() int {
 >         a, b := 0, 1
@@ -362,9 +362,3 @@ In *Go* una funzione può essere una *closure*
 >         f := fibonacci()
 >         fmt.Println(f(), f(), f(), f(), f())
 >     }
-
-La funzione *closure* è una funzione valore che può accedere e assegnare alle variabili di riferimento
-
-In questo senso la funzione è "vincolata" alle variabili esterne al suo corpo
-
-
