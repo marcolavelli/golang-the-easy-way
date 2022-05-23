@@ -404,6 +404,8 @@ for i, v := range pow {
 Nell'istruzione *range* si può omettere l'indice o il valore assegnando *_*
 ```go
 for i, _ := range pow
+```
+```go
 for _, value := range pow
 ```
 
