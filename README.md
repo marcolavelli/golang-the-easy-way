@@ -327,7 +327,7 @@ La funzione buil-in *delete* è utilizzata per eliminare un elemento da una *map
 >     ml := delete("due": 2)
 
 
-## Funzioni valori e closure
+# Funzioni valori e closure
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
 
 >     var adder := func(x, y float64) float64 {
