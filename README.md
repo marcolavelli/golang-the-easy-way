@@ -334,7 +334,7 @@ La funzione built-in *make* restituisce una *map* del tipo specificato, iniziali
 La funzione built-in *delete* è utilizzata per eliminare un elemento da una *map*
 >     ml := delete("due": 2)
 
-# Funzioni valori e closure
+# Funzioni valore
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
 
 >     var adder := func(x, y float64) float64 {
@@ -347,9 +347,8 @@ In *Go* una funzione è anche valore e può essere utilizzata come argomento o v
 >     
 >     fmt.Println(compute(adder))
 
-La funzione *Go* può essere una *closure*, un valore di
-
-Una *closure* è un valore di funzione che fa riferimento a variabili esterne al suo corpo.
+# Funzioni closure
+In *Go* una funzione può essere una *closure*
 
 >     func fibonacci() func() int {
 >         a, b := 0, 1
@@ -364,4 +363,8 @@ Una *closure* è un valore di funzione che fa riferimento a variabili esterne al
 >         fmt.Println(f(), f(), f(), f(), f())
 >     }
 
-La funzione può accedere e assegnare alle variabili di riferimento, in questo senso la funzione è "vincolata" alle variabili
+La funzione *closure* è una funzione valore che può accedere e assegnare alle variabili di riferimento
+
+In questo senso la funzione è "vincolata" alle variabili esterne al suo corpo
+
+
