@@ -316,7 +316,7 @@ Se si vuole solo l'indice, si può anche omettere la seconda variabile
 >     var m map[string]int
 >     
 ## Map literals
-Le *map literlas* ono come *struct literals* ma le chiavi sono obbligatorie
+Le *map literlas* sono come *struct literals* ma le chiavi sono obbligatorie
 >     ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
 
 ## Nil map
