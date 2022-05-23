@@ -18,13 +18,13 @@ Crea un file *ciao.go* e verifica la struttura del progetto
 
 Apri l'editor di testo e scrivi il seguente codice
 ```go
-       package main
+package main
        
-       import "fmt"
+import "fmt"
        
-       func main() {
-           fmt.Println("Ciao, Mondo!")
-       }
+func main() {
+       fmt.Println("Ciao, Mondo!")
+}
 ```
 
 Esegui il codice per vedere il saluto
