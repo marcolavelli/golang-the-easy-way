@@ -71,7 +71,7 @@ math.Pi
 
 # Funzioni
 Una funzione può accettare zero o più parametri e può restituire un numero qualsiasi di risultati
-```gp
+```go
 func swap(x int, y int) (int, int) {
     return y, x
 }
@@ -97,20 +97,27 @@ Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo
 
 # Variabili
 L'istruzione *var* dichiara un elenco di variabili e, come negli elenchi di argomenti delle funzioni, il tipo viene dopo i nomi delle variabili
->     var c, python, java bool
+```go
+var c, python, java bool
+```
 
 Una dichiarazione *var* può includere inizializzatori, uno per variabile, e il tipo può essere omesso
->     var c, python, java = true, false, "no!"
+```go
+var c, python, java = true, false, "no!"
+```
 
 L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
->     func main() {
->         c, python, java := true, false, "no!"
->         ...
+```go
+func main() {
+    c, python, java := true, false, "no!"
+```
 
 Le variabili possono essere dichiarate senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
->     var numerico int          // numerico = 0
->     var booleano bool         // booleano = false
->     var vocabolo string       // vocabolo = ""  
+```go
+var numerico int          // numerico = 0
+var booleano bool         // booleano = false
+var vocabolo string       // vocabolo = ""  
+```
 
 # Tipi di base
 
@@ -133,22 +140,28 @@ Le dimensioni dei tipi *int*, *uint* e *uintptr* dipendono dall'architettura del
 
 # Conversione di tipo
 L'espressione *T(v)* converte il valore *v* nel tipo *T*
->     var i int = 271
->     var f float64 = float64(i) / 100
+```go
+var i int = 271
+var f float64 = float64(i) / 100
+```
 
 A differenza di *C*, in *Go* l'assegnazione tra elementi di tipo diverso richiede una conversione esplicita
 
 # Costanti
 Le costanti sono dichiarate come le variabili ma con la parola chiave *const* e il loro nome inizia con la prima lettera maiuscola
->     const Pi = 3.14
+```go
+const Pi = 3.14
+```
 
 Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
 
 # For
 *Go* ha un solo costrutto di loop, il ciclo *for*
->     for i := 0; i < 10; i++ {
->         fmt.Println(i)
->     }
+```go
+for i := 0; i < 10; i++ {
+    fmt.Println(i)
+}
+```
     
 Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e virgola:
 - *init* : la dichiarazione iniziale di variabili, visibili nell'ambito del ciclo
@@ -156,79 +169,95 @@ Il ciclo *for* di base ha tre componenti, non obbligatorie, separate da punto e 
 - *post* : l'istruzione eseguita alla fine di ogni iterazione
 
 Se si omettono le istruzioni *init* e *post*, e i punti e virgola, si ottiene un ciclo *while* di *C*
->     i := 0
->     for i < 10 {
->         i += 1
->     }
+```go
+i := 0
+for i < 10 {
+    i += 1
+}
+```
 
-Se si omette la condizione
-di ciclo *cond* si ottiene un *loop infinito*
->     for {
->         // loop infinito
->     } 
+Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
+```go
+for {
+    // loop infinito
+}
+```
 
 # If
 *Go* ha un'istruzione *if* che può iniziare con una breve istruzione da eseguire prima della condizione  
->     if x > limit {
->         return limit - 1
->     } else {
->	      return x
->     }     
+```go
+if x > limit {
+    return limit - 1
+} else {
+    return x
+}     
 
->     if y := limit - 1; x <= limit {
->         return x
->     } else {
->	      return y
->     }
+if y := limit - 1; x <= limit {
+    return x
+} else {
+    return y
+}
+```
 
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
 
 # Switch
 *Go* ha un'istruzione *switch-case* simile a quella di *C*, *C++*, *Java*, *JavaScript* e *PHP*, tranne per il fatto che *Go* esegue solo il caso selezionato e non tutti i casi che seguono: l'istruzione *break* non è necessaria alla fine di ogni caso in quanto è fornita automaticamente
->     switch os := runtime.GOOS; os {
->     case "darwin":
->         fmt.Println("Go runs on OS X.")
->     case "linux":
->         fmt.Println("Go runs on Linux.")
->     default:
->         fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
->     }
+```go
+switch os := runtime.GOOS; os {
+case "darwin":
+    fmt.Println("Go runs on OS X.")
+case "linux":
+    fmt.Println("Go runs on Linux.")
+default:
+    fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
+}
+```
 
 Un'altra differenza è che i casi previsti possono non essere costanti e i valori possono non essere numeri interi
-
->     t := time.Now()
->     
->     switch {
->     case t.Hour() < 12:
->	      fmt.Println("Good morning!")
->     case t.Hour() < 17:
->	      fmt.Println("Good afternoon.")
->     default:
->	      fmt.Println("Good evening.")
->     }
+```go
+t := time.Now()
+     
+switch {
+case t.Hour() < 12:
+    fmt.Println("Good morning!")
+case t.Hour() < 17:
+    fmt.Println("Good afternoon.")
+default:
+    fmt.Println("Good evening.")
+}
+```
 
 L'istruzione *switch* senza una condizione può essere un modo pulito per scrivere lunghe catene *if-then-else*
 
 # Defer
 *Go* ha un'istruzione differita *defer* che rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna
->     for i:= 0; i < 10; i++ {
->	      defer fmt.Println(i)
->     }
->     fmt.Println("Print this before the loop and its result will be reversed")
+```go
+for i:= 0; i < 10; i++ {
+    defer fmt.Println(i)
+}
+fmt.Println("Print this before the loop and its result will be reversed")
+```
 
 La chiamata di funzione posticipata è inserita in uno stack e viene eseguita in ordine *last-in-first-out*
 
 # Puntatori
 *Go* ha un tipo puntatore **T* che contiene l'indirizzo di memoria a un valore *T*
->     var p *int
+```go
+var p *int
+```
 
 L'operatore *&* genera un puntatore al suo operando
->     i := 1
->     p = &i
+```go
+i := 1
+p = &i
+```
 
 L'operatore * permette di accedere al valore cui il puntatore fa riferimento
->     fmt.Println(*p)
->     *p = 2
+```go
+fmt.Println(*p)
+*p = 2
+```
 
 Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 
