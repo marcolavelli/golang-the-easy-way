@@ -263,87 +263,116 @@ Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 
 # Struct
 *Go* ha un tipo *struct* equivalente alla *classe* dei linguaggi basati sulla programmazione orientata agli oggetti
->     type Vertex struct {
->	      X int
->	      Y int
->	  }
->
->     var v = Vertex{1, 2}
+```go
+type Vertex struct {
+    X int
+    Y int
+}
+
+var v = Vertex{1, 2}
+```
 
 I campi di una *struct* sono accessibili tramite un punto *.X* oppure tramite un puntatore *p.X*, senza l'esplicita dereferenza *(*p).X*
->     v.X = 1
->       
->     p := &v
->     p.X = 3
+```go
+ v.X = 1
+      
+p := &v
+p.X = 3
+```
 
 ## Struct literals
 Le *struct literals* sono utilizzate per creare nuove istanze e l'ordine dei campi è irrilevante
->     v2 := Vertex {Y: 6, X: 4}
+```go
+v2 := Vertex {Y: 6, X: 4}
+```
 
 # Array
 *Go* ha un tipo *array* *[n]T* di dimensione fissa
->     var primes [6]int
->     primes[0] = 2
->     primes[1] = 3
->     primes[2] = 5
->     primes[3] = 7
->     primes[4] = 11
->     primes[5] = 13
+```go
+var primes [6]int
+primes[0] = 2
+primes[1] = 3
+primes[2] = 5
+primes[3] = 7
+primes[4] = 11
+primes[5] = 13
+```
 
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
 
 ## Array literals
 Gli array literals sono utilizzati per creare nuove istanze
->     primes := [6]int{2, 3, 5, 7, 11, 13}
+```go
+primes := [6]int{2, 3, 5, 7, 11, 13}
+```
 
 # Slices
 *Go* ha un tipo *slice* *[ ]T* di dimensioni dinamiche
->     var threeprimes []int = primes[0:3]
+```go
+var threeprimes []int = primes[0:3]
 
->     fiveprimes := primes[0:5]
+fiveprimes := primes[0:5]
+```
 
 Una *slice* è una vista di un *array* e non memorizza i dati, la modifica di un elemento comporta la modifica dell'elemento nell'*array*
->     threeprimes[2] = 0
->     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
+```go
+threeprimes[2] = 0
+fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
+```
 
 Anche altre *slices* che condividono lo stesso *array* sottostante vedranno tali modifiche
->     fiveprimes := primes[0:5]
->     fmt.Println(fiveprimes)        // print 2, 3, 0, 7, 11 
+```go
+fiveprimes := primes[0:5]
+fmt.Println(fiveprimes)        // print 2, 3, 0, 7, 11
+```
 
 ## Slice literals
 Le *slice literals* sono come *array literals* senza la lunghezza
->     sl := []bool{true, true, false}
+```go
+sl := []bool{true, true, false}
+```
 
 ## Slice length e capacity
 Una *slice* ha sia una lunghezza che una capacità:
 - la lunghezza è il numero di elementi che contiene
 - la capacità è il numero di elementi nell'*array* sottostante, a partire dal primo elemento della *slice*
->     someprimes := primes[3:]      // len=3 cap=3
+```go
+someprimes := primes[3:]      // len=3 cap=3
+```
 
 Durante lo *slicing* si possono omettere i limiti alto e basso
->     sixprimes[0:6]
->     sixprimes[0:]
->     sixprimes[:6]
->     sixprimes[:]  
+```go
+sixprimes[0:6]
+sixprimes[0:]
+sixprimes[:6]
+sixprimes[:]  
+```
 
 La lunghezza di una *slice*, a condizione che abbia una capacità sufficiente, può essere estesa con il *re-slicing* 
->     someprimes = primes[1:5]      // len=4 cap=5
->     someprimes = primes[1:]       // len=5 cap=5
->     fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
+```go
+someprimes = primes[1:5]      // len=4 cap=5
+someprimes = primes[1:]       // len=5 cap=5
+fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
+```
 
 ## Nil slice
 Il valore zero di una slice è *nil*
->     var noprimes []int                   // len=0 cap=0   
+```go
+var noprimes []int                   // len=0 cap=0  
+```
 
 Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
 
 ## Slice built-in
 La funzione built-in *make* restituisce una *slice*, inizializzata e pronta per l'uso
->     bestprimes := make([]int, 10)
+```go
+bestprimes := make([]int, 10)
+```
 
 La funzione built-in *append* è utilizzata per aggiungere elementi ad una *slice* 
->     bestprimes = append(bestprimes, 13)
-
+```go
+bestprimes = append(bestprimes, 13)
+```
 
 # Range
 *Go* ha un'istruzione *range* per iterare una *slice* o una *map*
@@ -351,26 +380,36 @@ La funzione built-in *append* è utilizzata per aggiungere elementi ad una *slic
 Il *ranging* di una *slice* restituisce due valori:
 - il primo è l'indice
 - il secondo è una copia dell'elemento in quell'indice
->     var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
->     
->     for i, v := range pow {
->         fmt.Printf("2**%d = %d \n", i, v)
->     }
+```go
+var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
+   
+for i, v := range pow {
+    fmt.Printf("2**%d = %d \n", i, v)
+}
+```
 
 Nell'istruzione *range* si può omettere l'indice o il valore assegnando *_*
->     for i, _ := range pow
->     for _, value := range pow
+```go
+for i, _ := range pow
+for _, value := range pow
+```
 
 Se si vuole solo l'indice, si può anche omettere la seconda variabile
->     for i := range pow
+```go
+for i := range pow
+```
 
 # Mappe
 *Go* ha un tipo *map* che associa le chiavi ai valori
->     var m map[string]int
->     
+```go
+var m map[string]int
+```
+
 ## Map literals
 Le *map literals* sono come *struct literals* ma le chiavi sono obbligatorie
->     ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
+```go
+ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
+```
 
 ## Nil map
 Il valore zero di una mappa è *nil*
@@ -379,23 +418,29 @@ Una *nil map* non ha chiavi e non si possono aggiungerne
 
 ## Map built-in
 La funzione built-in *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
->     m := make(map[string]int)
+```go
+m := make(map[string]int)
+```
 
 La funzione built-in *delete* è utilizzata per eliminare un elemento da una *map*
->     ml := delete("due": 2)
+```go
+ml := delete("due": 2)
+```
 
 # Funzioni valore
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
 
->     var adder := func(x, y float64) float64 {
->         return x + y
->     } 
->     
->     func compute(fn func(float64, float64) float64) float64 {
->         return fn(3, 4)
->     } 
->     
->     fmt.Println(compute(adder))
+```go
+var adder := func(x, y float64) float64 {
+    return x + y
+} 
+     
+func compute(fn func(float64, float64) float64) float64 {
+    return fn(3, 4)
+} 
+  
+fmt.Println(compute(adder))
+```
 
 # Funzioni closure
 In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" alle variabili esterne al suo corpo
