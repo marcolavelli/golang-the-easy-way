@@ -23,7 +23,7 @@ package main
 import "fmt"
        
 func main() {
-       fmt.Println("Ciao, Mondo!")
+    fmt.Println("Ciao, Mondo!")
 }
 ```
 
@@ -34,46 +34,64 @@ Fantastico! Benvenuto nel mondo dei *Gophers*
 
 # Pacchetti
 Un programma *Go* è composto da pacchetti e la sua esecuzione inizia dal pacchetto *main*
->     package main
+```go
+package main
+```
 
 Per convenzione il nome del pacchetto è lo stesso dell'ultimo elemento del percorso di importazione
->     import ("math/rand")
->     rand.Intn(10)
+```go
+import ("math/rand")
+rand.Intn(10)
+```
 
 L'ambiente in cui vengono eseguiti i programmi è deterministico, quindi ogni volta che si esegue *rand.Intn*, esso restituirà lo stesso numero; per vedere un numero diverso si deve "seminare" il generatore di numeri
->     rand.Seed(time.Now().UTC().UnixNano())
+```go
+rand.Seed(time.Now().UTC().UnixNano())
+```
 
 # Importazioni
 In *Go* possiamo scrivere più linee di istruzione per le importazioni
->     import "fmt
->     import "math/rand"
+```go
+import "fmt
+import "math/rand"
+```
 
 ma è buon stile di programmazione usare l'istruzione fattorizzata
->     import (
->       "fmt"
->       "math/rand"
->     )
+```go
+import (
+    "fmt"
+    "math/rand"
+)
+```
 
 Un nome "esportato" inizia sempre con una lettera maiuscola
->     math.Pi
+```go
+math.Pi
+```
 
 # Funzioni
 Una funzione può accettare zero o più parametri e può restituire un numero qualsiasi di risultati
->     func swap(x int, y int) (int, int) {
->         return y, x
->     }
+```gp
+func swap(x int, y int) (int, int) {
+    return y, x
+}
+```
 
 Se due o più parametri consecutivi sono dello stesso tipo allora è possibile omettere il tipo da tutti i parametri tranne nell'ultimo
->     func add(x, y int) int {
->         return x + y
->     }   
+```go
+func add(x, y int) int {
+    return x + y
+}
+```
 
 Una funzione può avere valori di ritorno "denominati" e restituirli con un'istruzione *return* senza argomenti
->     func split(sum int) (x, y int) {
->         x = sum * 4 / 9
->         y = sum - x
->         return
->     }
+```go
+func split(sum int) (x, y int) {
+    x = sum * 4 / 9
+    y = sum - x
+    return
+}
+```
 
 Questa istruzione è nota come "ritorno nudo", e dovrebbe essere utilizzata solo in funzioni brevi
 
