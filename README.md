@@ -240,10 +240,11 @@ Le *struct literals* sono utilizzate per creare nuove istanze e l'ordine dei cam
 >     primes[4] = 11
 >     primes[5] = 13
 
-## Array literals
->     primes := [6]int{2, 3, 5, 7, 11, 13}
-
 La lunghezza *n* fa parte del suo tipo e quindi non può essere ridimensionato
+
+## Array literals
+Gli array literals sono utilizzati per creare nuove istanze
+>     primes := [6]int{2, 3, 5, 7, 11, 13}
 
 # Slices
 *Go* ha un tipo *slice* *[ ]T* di dimensioni dinamiche
