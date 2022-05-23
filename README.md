@@ -199,8 +199,8 @@ if x > limit {
 } else {
     return x
 }     
-```go
 ```
+```go
 if y := limit - 1; x <= limit {
     return x
 } else {
