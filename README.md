@@ -434,7 +434,7 @@ m := make(map[string]int)
 
 La funzione built-in *delete* è utilizzata per eliminare un elemento da una *map*
 ```go
-ml := delete("due": 2)
+delete(m, "due")
 ```
 
 # Funzioni valore
