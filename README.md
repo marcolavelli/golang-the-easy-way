@@ -364,11 +364,9 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >     }
 
 # Literals
-*Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati
-
-Il vantaggio è che l'aspetto del codice riflette in qualche modo la struttura dei dati
-
-Lo svantaggio è che devi conoscere il layout in anticipo e avere già il contenuto inizializzato
+*Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati:
+- vantaggio: il codice riflette la struttura dei dati
+- svantaggio: il layout deve essere conosciuto in anticipo e il contenuto già inizializzato
 >     purpleStruct := {red: 128, green: 0, blue: 128}
 >
 >     purpleArray := [3]int{128, 0, 128}
