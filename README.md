@@ -428,6 +428,9 @@ ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
 
 ## Nil map
 Il valore zero di una mappa è *nil*
+```go
+var m map[string]int
+```
 
 Una *nil map* non ha chiavi e non si possono aggiungerne
 
