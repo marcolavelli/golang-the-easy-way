@@ -369,7 +369,13 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 - 👍 il codice riflette la struttura dei dati
 - 👎 il layout deve essere conosciuto in anticipo
 - ✍️ il contenuto viene subito inizializzato
->     purpleStruct := {red: 128, green: 0, blue: 128}
+>     type colorRgb struct {
+>             red   int
+>              green int
+>             blue  int
+>     }
+>     
+>     purpleStruct := colorRgb{red: 128, green: 0, blue: 128}
 >
 >     purpleArray := [3]int{128, 0, 128}
 >
