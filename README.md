@@ -5,7 +5,7 @@ Guida sintetica e semplice del linguaggio *Go* (prima edizione in lingua italian
 Prima di iniziare, se non l'hai già fatto, installa *Go* => https://go.dev/doc/install
 
 Apri un prompt dei comandi e crea una directory *progetto* per il tuo primo codice sorgente *Go*
-```batch
+```terminal
 >     mkdir progetto
 >     cd progetto
 ```
