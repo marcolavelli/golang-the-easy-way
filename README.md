@@ -17,6 +17,7 @@ Crea un file *ciao.go* e verifica la struttura del progetto
 >           └── go.mod
 
 Apri l'editor di testo e scrivi il seguente codice
+```go
 >       package main
 >       
 >       import "fmt"
@@ -24,6 +25,7 @@ Apri l'editor di testo e scrivi il seguente codice
 >       func main() {
 >           fmt.Println("Ciao, Mondo!")
 >       }
+```
 
 Esegui il codice per vedere il saluto
 >       go run .
@@ -384,6 +386,3 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >
 >     purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
 
-```go
-purpleArray := [3]int{128, 0, 128}
-```
