@@ -368,7 +368,7 @@ fmt.Println(primes)           // print 2, 3, 0, 7, 11, 13
 ## Nil slice
 Il valore zero di una slice è *nil*
 ```go
-var noprimes []int                   // len=0 cap=0  
+var noprimes []int            // len=0 cap=0  
 ```
 
 Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
