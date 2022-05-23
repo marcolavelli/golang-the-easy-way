@@ -370,37 +370,38 @@ In *Go* una funzione è anche valore e può essere utilizzata come argomento o v
 
 # Funzioni closure
 In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" alle variabili esterne al suo corpo
-
->     func fibonacci() func() int {
->         a, b := 0, 1
->         return func() int {
->             a, b = b, a+b
->             return a
->         }
->     }
->     
->     func main() {
->         f := fibonacci()
->         fmt.Println(f(), f(), f(), f(), f())
->     }
+```go
+func fibonacci() func() int {
+    a, b := 0, 1
+    return func() int {
+        a, b = b, a+b
+        return a
+    }
+}
+ 
+func main() {
+    f := fibonacci()
+    fmt.Println(f(), f(), f(), f(), f())
+}
+```
 
 # Letterali
 *Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati:
-
 - 👍 il codice riflette la struttura dei dati
 - 👎 il layout deve essere conosciuto in anticipo
 - ✍️ il contenuto deve essere subito inizializzato
->     type colorRgb struct {
->             red   int
->             green int
->             blue  int
->     }
->     
->     purpleStruct := colorRgb{red: 128, green: 0, blue: 128}
->
->     purpleArray := [3]int{128, 0, 128}
->
->     purpleSlice := []int{128, 0, 128}
->
->     purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
+```go
+type colorRgb struct {
+    red   int
+    green int
+    blue  int
+}
+     
+purpleStruct := colorRgb{red: 128, green: 0, blue: 128}
 
+purpleArray := [3]int{128, 0, 128}
+
+purpleSlice := []int{128, 0, 128}
+
+purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
+```
