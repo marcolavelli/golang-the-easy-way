@@ -60,7 +60,7 @@ rand.Seed(time.Now().UTC().UnixNano())
 # Importazioni
 In *Go* possiamo scrivere più linee di istruzione per le importazioni
 ```go
-import "fmt
+import "fmt"
 import "math/rand"
 ```
 
