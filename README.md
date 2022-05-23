@@ -366,11 +366,11 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 # Literals
 *Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati:
 
-⬆️  il codice riflette la struttura dei dati
+👍 il codice riflette la struttura dei dati
 
-⬇️  il layout deve essere conosciuto in anticipo
+👎 il layout deve essere conosciuto in anticipo
 
-⬇️  il contenuto deve essere inizializzato
+✍️ il contenuto deve essere inizializzato
 >     purpleStruct := {red: 128, green: 0, blue: 128}
 >
 >     purpleArray := [3]int{128, 0, 128}
