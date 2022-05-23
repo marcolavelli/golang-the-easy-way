@@ -371,7 +371,7 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 - ✍️ il contenuto deve essere subito inizializzato
 >     type colorRgb struct {
 >             red   int
->              green int
+>             green int
 >             blue  int
 >     }
 >     
