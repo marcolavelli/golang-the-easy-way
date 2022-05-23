@@ -11,12 +11,16 @@ Apri un prompt dei comandi e crea una directory *progetto* per il tuo primo codi
 ```
 
 Abilita il monitoraggio delle dipendenze: crea un file *go.mod* e assegna il nome del modulo in cui si troverà il codice
->     go mod init ciao.go/progetto
+```batch
+go mod init ciao.go/progetto
+```
 
 Crea un file *ciao.go* e verifica la struttura del progetto
->       └── progetto
->           ├── ciao.go
->           └── go.mod
+```batch
+└── progetto
+    ├── ciao.go
+    └── go.mod
+```
 
 Apri l'editor di testo e scrivi il seguente codice
 ```go
@@ -30,7 +34,9 @@ func main() {
 ```
 
 Esegui il codice per vedere il saluto
->       go run .
+```batch
+go run .
+```
 
 Fantastico! Benvenuto nel mondo dei *Gophers* 
 
