@@ -141,7 +141,8 @@ Se si omettono le istruzioni *init* e *post*, e i punti e virgola, si ottiene un
 >         i += 1
 >     }
 
-Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
+Se si omette la condizione
+di ciclo *cond* si ottiene un *loop infinito*
 >     for {
 >         // loop infinito
 >     } 
@@ -363,7 +364,7 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >         fmt.Println(f(), f(), f(), f(), f())
 >     }
 
-# Literals
+# Letterali
 *Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati:
 
 - 👍 il codice riflette la struttura dei dati
@@ -383,3 +384,6 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >
 >     purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
 
+```
+purpleArray := [3]int{128, 0, 128}
+```
