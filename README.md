@@ -384,6 +384,6 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >
 >     purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
 
-```
+```go
 purpleArray := [3]int{128, 0, 128}
 ```
