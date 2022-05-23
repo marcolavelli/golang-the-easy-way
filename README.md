@@ -314,18 +314,20 @@ Se si vuole solo l'indice, si può anche omettere la seconda variabile
 # Mappe
 *Go* ha un tipo *map* che associa le chiavi ai valori
 >     var m map[string]int
-
-Il valore zero di una mappa è *nil*, una *nil map* non ha chiavi e non si possono aggiungerne
-
-La funzione *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
->     m := make(map[string]int)
-
+>     
+## Map literals
 Le *map literlas* ono come *struct literals* ma le chiavi sono obbligatorie
 >     ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
 
+## Nil map
+Il valore zero di una mappa è *nil*, una *nil map* non ha chiavi e non si possono aggiungerne
+
+## Map built-in
+La funzione *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
+>     m := make(map[string]int)
+
 La funzione buil-in *delete* è utilizzata per eliminare un elemento da una *map*
 >     ml := delete("due": 2)
-
 
 # Funzioni valori e closure
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
