@@ -118,6 +118,8 @@ L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo impli
 ```go
 func main() {
     c, python, java := true, false, "no!"
+    // ecc.
+}
 ```
 
 Le variabili possono essere dichiarate senza un valore esplicito e viene assegnato a loro il valore *zero*, differente a seconda del tipo
