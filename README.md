@@ -245,6 +245,7 @@ L'istruzione *switch* senza una condizione può essere un modo pulito per scrive
 for i:= 0; i < 10; i++ {
     defer fmt.Println(i)
 }
+
 fmt.Println("Print this before the loop and its result will be reversed")
 ```
 
