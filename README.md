@@ -366,12 +366,11 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 # Approfondimento Literals
 I linguaggi di programmazione usano la parola *literal* quando si fa riferimento a modi sintattici per costruire una struttura di dati. Significa che non è costruito creandone uno vuoto e aggiungendo o sottraendo mentre procedi.
 Il vantaggio è che l'aspetto del codice riflette in qualche modo la struttura dei dati. Lo svantaggio è che devi conoscere il layout in anticipo e avere già il contenuto inizializzato, cosa non possibile se, ad esempio, stai costruendo una mappa con chiavi sconosciute.
-Struct
 >     purpleStruct := {red: 128, green: 0, blue: 128}
-Array
+>
 >     purpleArray := [3]int{128, 0, 128}
-Slice
+>
 >     purpleSlice := []int{128, 0, 128}
-Mappe
+>
 >     purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
 
