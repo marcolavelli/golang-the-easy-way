@@ -363,9 +363,12 @@ In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" 
 >         fmt.Println(f(), f(), f(), f(), f())
 >     }
 
-# Approfondimento Literals
-I linguaggi di programmazione usano la parola *literal* quando si fa riferimento a modi sintattici per costruire una struttura di dati. Significa che non è costruito creandone uno vuoto e aggiungendo o sottraendo mentre procedi.
-Il vantaggio è che l'aspetto del codice riflette in qualche modo la struttura dei dati. Lo svantaggio è che devi conoscere il layout in anticipo e avere già il contenuto inizializzato, cosa non possibile se, ad esempio, stai costruendo una mappa con chiavi sconosciute.
+# Literals
+*Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati
+
+Il vantaggio è che l'aspetto del codice riflette in qualche modo la struttura dei dati
+
+Lo svantaggio è che devi conoscere il layout in anticipo e avere già il contenuto inizializzato
 >     purpleStruct := {red: 128, green: 0, blue: 128}
 >
 >     purpleArray := [3]int{128, 0, 128}
