@@ -288,7 +288,7 @@ Il valore zero di una slice è *nil*
 Una *nil slice* ha una lunghezza e capacità uguale a 0 e non ha un *array* sottostante
 
 ## Slice built-in
-Una *slice* può essere creata con la funzione built-in *make*, è il modo per creare un *array* di dimensioni dinamiche
+La funzione built-in *make* restituisce una *slice*, inizializzata e pronta per l'uso
 >     bestprimes := make([]int, 10)
 
 La funzione built-in *append* è utilizzata per aggiungere elementi ad una *slice* 
@@ -319,17 +319,17 @@ Se si vuole solo l'indice, si può anche omettere la seconda variabile
 >     var m map[string]int
 >     
 ## Map literals
-Le *map literlas* sono come *struct literals* ma le chiavi sono obbligatorie
+Le *map literals* sono come *struct literals* ma le chiavi sono obbligatorie
 >     ml := map[string]int{"zero": 0, "uno": 1, "due": 2}
 
 ## Nil map
 Il valore zero di una mappa è *nil*, una *nil map* non ha chiavi e non si possono aggiungerne
 
 ## Map built-in
-La funzione *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
+La funzione built-in *make* restituisce una *map* del tipo specificato, inizializzata e pronta per l'uso
 >     m := make(map[string]int)
 
-La funzione buil-in *delete* è utilizzata per eliminare un elemento da una *map*
+La funzione built-in *delete* è utilizzata per eliminare un elemento da una *map*
 >     ml := delete("due": 2)
 
 # Funzioni valori e closure
