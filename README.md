@@ -543,4 +543,4 @@ type Stringer interface {
     String() string
 }
 ```
-Il pacchetto *fmt* (e molti altri) usa questa interfaccia per stampare i valori
+Il pacchetto *fmt* e molti altri usano questa interfaccia per stampare i valori
