@@ -507,7 +507,7 @@ func (v Vertex) Abs() float64 {
 }
 ```
 
-In *Go* si può anche dichiarare un metodo anche su tipi non struct
+In *Go* si può dichiarare un *metodo* anche per i tipi non *struct*
 ```go
 type MyFloat float64
 
@@ -519,10 +519,28 @@ func (f MyFloat) Abs() float64 {
 }
 ```
 
-I *metodo* con ricevitore di puntatore sono i più comuni in quanto possono modificare il valore a cui punta il ricevitore
+I *metodi* con ricevitore di puntatore sono i più comuni in quanto possono modificare il valore a cui punta il ricevitore
 ```go
 func (v *Vertex) Scale(f float64) {
     v.X = v.X * f
     v.Y = v.Y * f
 }
 ```
+
+# Interfacce
+*Go* ha un tipo *interfaccia* definito come un insieme di firme di *metodo*
+```go
+type Abser interface {
+    Abs() float64
+}
+```
+Un valore di tipo *interfaccia* può contenere qualsiasi valore che implementa tali metodi
+
+## Stringers
+In *Go* una delle *interfacce* più onnipresenti è *Stringer* definita dal pacchetto *fmt*
+```go
+type Stringer interface {
+    String() string
+}
+```
+Il pacchetto *fmt* (e molti altri) usa questa interfaccia per stampare i valori
