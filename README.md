@@ -544,3 +544,49 @@ type Stringer interface {
 }
 ```
 Il pacchetto *fmt* e molti altri usano questa interfaccia per stampare i valori
+
+## Errors
+Il tipo di *error* è un'interfaccia integrata simile a *Stringer*
+```go
+type error interface {
+    Error() string
+}
+```
+
+## Readers
+Il pacchetto *io* specifica l'interfaccia *io.Reader* che rappresenta la fine della lettura di un flusso di dati
+La libreria standard *Go* contiene molte implementazioni di questa interfaccia, inclusi file, connessioni di rete, compressori, cifrari e altro.
+
+# Generics
+*Go* supporta anche i tipi *generics*
+```go
+type List[T any] struct {
+    next *List[T]
+    val  T
+}
+```
+
+# Goroutines
+Una *goroutine* è un thread leggero gestito dal runtime *Go*
+```go
+go say("world")
+```
+
+# Channels
+I *channels* sono un condotto tipizzato attraverso il quale è possibile inviare e ricevere valori con l'operatore del canale, *<-*
+```go
+ch <- v    // Send v to channel ch.
+v := <-ch  // Receive from ch, and assign value to v.
+```
+
+Come le *mappe* e le *slices*, i *channels* devono essere creati prima dell'uso
+```go
+ch := make(chan int)
+```
+
+I *channels* possono essere *bufferizzati*, la lunghezza del *buffer* è il secondo argomento
+```go
+ch := make(chan int, 100)
+```
+Invia un blocco solo quando il *buffer* è pieno e riceve il blocco quando il *buffer* è vuoto
+
