@@ -29,7 +29,7 @@ package main
 import "fmt"
        
 func main() {
-    fmt.Println("Ciao, Mondo!")
+	fmt.Println("Ciao, Mondo!")
 }
 ```
 
@@ -67,8 +67,8 @@ import "math/rand"
 ma è buon stile di programmazione usare l'istruzione fattorizzata
 ```go
 import (
-    "fmt"
-    "math/rand"
+	"fmt"
+	"math/rand"
 )
 ```
 
@@ -81,23 +81,23 @@ math.Pi
 Una funzione può accettare zero o più parametri e può restituire un numero qualsiasi di risultati
 ```go
 func swap(x int, y int) (int, int) {
-    return y, x
+	return y, x
 }
 ```
 
 Se due o più parametri consecutivi sono dello stesso tipo allora è possibile omettere il tipo da tutti i parametri tranne nell'ultimo
 ```go
 func add(x, y int) int {
-    return x + y
+	return x + y
 }
 ```
 
 Una funzione può avere valori di ritorno "denominati" e restituirli con un'istruzione *return* senza argomenti
 ```go
 func split(sum int) (x, y int) {
-    x = sum * 4 / 9
-    y = sum - x
-    return
+	x = sum * 4 / 9
+	y = sum - x
+	return
 }
 ```
 
@@ -117,8 +117,8 @@ var c, python, java = true, false, "no!"
 L'assegnazione breve *:=* può sostituire una dichiarazione *var* con tipo implicito ma solo all'interno di una funzione
 ```go
 func main() {
-    c, python, java := true, false, "no!"
-    // ecc.
+	c, python, java := true, false, "no!"
+	// ecc.
 }
 ```
 
@@ -169,7 +169,7 @@ Le costanti non possono essere dichiarate utilizzando l'assegnazione breve *:=*
 *Go* ha un solo costrutto di loop, il ciclo *for*
 ```go
 for i := 0; i < 10; i++ {
-    fmt.Println(i)
+	fmt.Println(i)
 }
 ```
     
@@ -182,14 +182,14 @@ Se si omettono le istruzioni *init* e *post*, e i punti e virgola, si ottiene un
 ```go
 i := 0
 for i < 10 {
-    i += 1
+	i += 1
 }
 ```
 
 Se si omette la condizione di ciclo *cond* si ottiene un *loop infinito*
 ```go
 for {
-    // loop infinito
+	// loop infinito
 }
 ```
 
@@ -197,18 +197,18 @@ for {
 *Go* ha un'istruzione *if* che non deve essere necessariamente racchiusa tra parentesi ( ) 
 ```go
 if x > limit {
-    return limit - 1
+	return limit - 1
 } else {
-    return x
+	return x
 }     
 ```
 
 L'istruzione *if*  può iniziare con una breve istruzione da eseguire prima della condizione 
 ```go
 if y := limit - 1; x <= limit {
-    return x
+	return x
 } else {
-    return y
+	return y
 }
 ```
 Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche all'interno di uno qualsiasi dei blocchi *else*
@@ -218,11 +218,11 @@ Le variabili dichiarate all'interno di un'istruzione *if* sono disponibili anche
 ```go
 switch os := runtime.GOOS; os {
 case "darwin":
-    fmt.Println("Go runs on OS X.")
+	fmt.Println("Go runs on OS X.")
 case "linux":
-    fmt.Println("Go runs on Linux.")
+	fmt.Println("Go runs on Linux.")
 default:
-    fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
+	fmt.Printf("Go runs on %s.\n", os) // freebsd, openbsd, plan9, windows...
 }
 ```
 
@@ -232,11 +232,11 @@ t := time.Now()
      
 switch {
 case t.Hour() < 12:
-    fmt.Println("Good morning!")
+	fmt.Println("Good morning!")
 case t.Hour() < 17:
-    fmt.Println("Good afternoon.")
+	fmt.Println("Good afternoon.")
 default:
-    fmt.Println("Good evening.")
+	fmt.Println("Good evening.")
 }
 ```
 
@@ -246,7 +246,7 @@ L'istruzione *switch* senza una condizione può essere un modo pulito per scrive
 *Go* ha un'istruzione differita *defer* che rinvia l'esecuzione di una funzione fino a quando la funzione circostante non ritorna
 ```go
 for i:= 0; i < 10; i++ {
-    defer fmt.Println(i)
+	defer fmt.Println(i)
 }
 
 fmt.Println("Print this before the loop and its result will be reversed")
@@ -278,8 +278,8 @@ Questa istruzione è nota come "dereferenziazione" o "indirizzamento"
 *Go* ha un tipo *struct* equivalente alla *classe* dei linguaggi basati sulla programmazione orientata agli oggetti
 ```go
 type Vertex struct {
-    X int
-    Y int
+	X int
+	Y int
 }
 
 var v = Vertex{1, 2}
@@ -397,7 +397,7 @@ Il *ranging* di una *slice* restituisce due valori:
 var pow = []int{1, 2, 4, 8, 16, 32, 64, 128}
    
 for i, v := range pow {
-    fmt.Printf("2**%d = %d \n", i, v)
+	fmt.Printf("2**%d = %d \n", i, v)
 }
 ```
 
@@ -449,11 +449,11 @@ delete(m, "due")
 In *Go* una funzione è anche valore e può essere utilizzata come argomento o valore di ritorno
 ```go
 var adder := func(x, y float64) float64 {
-    return x + y
+	return x + y
 } 
      
 func compute(fn func(float64, float64) float64) float64 {
-    return fn(3, 4)
+	return fn(3, 4)
 } 
   
 fmt.Println(compute(adder))
@@ -463,29 +463,29 @@ fmt.Println(compute(adder))
 In *Go* una funzione può essere una *closure*, una funzione valore "vincolata" alle variabili esterne al suo corpo
 ```go
 func fibonacci() func() int {
-    a, b := 0, 1
-    return func() int {
-        a, b = b, a+b
-        return a
-    }
+	a, b := 0, 1
+	return func() int {
+		a, b = b, a+b
+	return a
+	}
 }
  
 func main() {
-    f := fibonacci()
-    fmt.Println(f(), f(), f(), f(), f())
+	f := fibonacci()
+	fmt.Println(f(), f(), f(), f(), f())
 }
 ```
 
-# Letterali
-*Go* come altri linguaggi di programmazione usa istruzioni *literal* per dichiarare e inizializzare una struttura di dati:
+# Literals
+*Go* come altri linguaggi di programmazione usa istruzioni *literals* per dichiarare e inizializzare una struttura di dati:
 - 👍 il codice riflette la struttura dei dati
 - 👎 il layout deve essere conosciuto in anticipo
 - ✍️ il contenuto deve essere subito inizializzato
 ```go
 type colorRgb struct {
-    red   int
-    green int
-    blue  int
+	red   int
+	green int
+	blue  int
 }
      
 purpleStruct := colorRgb{red: 128, green: 0, blue: 128}
@@ -507,7 +507,7 @@ func (v Vertex) Abs() float64 {
 }
 ```
 
-Puoi anche dichiarare un metodo su tipi non struct
+In *Go* si può anche dichiarare un metodo anche su tipi non struct
 ```go
 type MyFloat float64
 
@@ -519,11 +519,10 @@ func (f MyFloat) Abs() float64 {
 }
 ```
 
-È possibile dichiarare metodi con ricevitori puntatore che possono modificare il valore a cui punta il ricevitore
+I *metodo* con ricevitore di puntatore sono i più comuni in quanto possono modificare il valore a cui punta il ricevitore
 ```go
 func (v *Vertex) Scale(f float64) {
 	v.X = v.X * f
 	v.Y = v.Y * f
 }
 ```
-Poiché i metodi spesso devono modificare il loro ricevitore, i ricevitori di puntatore sono più comuni dei ricevitori di valore.
