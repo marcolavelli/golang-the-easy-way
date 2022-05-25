@@ -496,3 +496,32 @@ purpleSlice := []int{128, 0, 128}
 
 purpleMap := map[string]int{"red": 128, "green": 0, "blue": 128} 
 ```
+
+# Metodi
+*Go* non ha classi, tuttavia, puoi definire *metodi* sui tipi
+
+Un *metodo* è una funzione con uno speciale argomento ricevitore
+```go
+
+
+
+Il destinatario appare nel proprio elenco di argomenti tra la parola chiave func e il nome del metodo.
+
+
+Puoi anche dichiarare un metodo su tipi non struct.
+
+Puoi dichiarare un metodo solo con un destinatario il cui tipo è definito nello stesso pacchetto del metodo.
+
+Non puoi dichiarare un metodo con un ricevitore il cui tipo è definito in un altro pacchetto (che include i tipi incorporati come int).
+
+
+È possibile dichiarare metodi con ricevitori puntatore.
+
+Ciò significa che il tipo di ricevitore ha la sintassi letterale *T per alcuni tipi T. (Inoltre, T non può essere esso stesso un puntatore come *int.)
+
+I metodi con ricevitori puntatori possono modificare il valore a cui punta il ricevitore
+
+Poiché i metodi spesso devono modificare il loro ricevitore, i ricevitori di puntatore sono più comuni dei ricevitori di valore.
+
+
+
